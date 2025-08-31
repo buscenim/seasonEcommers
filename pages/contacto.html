@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Contactanos</title>
+    <!-- Hoja de estilos principal -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,50 +28,53 @@
                     <li><a href="../pages/mujer.html">Mujer</a></li>
                     <li><a href="../pages/hombre.html">Hombre</a></li>
                     <li><a href="../pages/quienes-somos.html">Quienes Somos</a></li>
-                    <li><a href="#">Contactanos</a></li>
+                    <li><a href="../pages/contacto.html">Contactanos</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main class="main">
         <h1>Contactanos</h1>
-        <div class="div-contacto-p">
-            <p>
-                Podes ponerte en contacto a travéz de nuestras redes sociales o al siguiente correo season@season.com o completa el formulario
-                y nos ponemos en contacto
-            </p>
-        </div>
-        <div class="div-form-contacto">
-        <form action="#" method="post">
-            <label for="nombre">Nombre: </label>
-            <input type="text" placeholder="Ingrese su Nombre" id="nombre"><br>
+        <section>
+            <div class="div-contacto-p">
+                <p>
+                    Podes ponerte en contacto a travéz de nuestras redes sociales o al siguiente correo
+                    season@season.com o completa el formulario
+                    y nos ponemos en contacto
+                </p>
+            </div>
+            <!-- Formulario de contacto -->
+            <div class="div-form-contacto">
+                <form action="#" method="post">
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" name="nombre" placeholder="Ingrese su Nombre" id="nombre"><br>
 
-            <label for="apellido">Apellido: </label>
-            <input type="text" placeholder="Ingrese su Apellido" id="apellido"><br>
+                    <label for="apellido">Apellido: </label>
+                    <input type="text" name="apellido" placeholder="Ingrese su Apellido" id="apellido"><br>
 
-            <label for="telefono">Teléfono: </label>
-            <input type="number" placeholder="Ingrese su Teléfono" id="telefono"><br>
+                    <label for="telefono">Teléfono: </label>
+                    <input type="number" name="telefono" placeholder="Ingrese su Teléfono" id="telefono"><br>
 
-            <label for="email">Email: </label>
-            <input type="email" placeholder="Ingrese su Email" id="email"><br>
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" placeholder="Ingrese su Email" id="email"><br>
 
-            <input type="button" value="Enviar">
-        </form>
-        </div>
-
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
         <p>SEASON CBA©| Todos los derechos reservados.</p>
         <div class="social-icons">
             <a href="https://www.instagram.com" target="_blank">
-                <img src="/img/instagram.svg" alt="Instagram">
+                <img src="../img/instagram.svg" alt="Instagram">
             </a>
             <a href="https://www.facebook.com" target="_blank">
-                <img src="/img/facebook.svg" alt="Facebook">
+                <img src="../img/facebook.svg" alt="Facebook">
             </a>
             <a href="https://www.tiktok.com" target="_blank">
-                <img src="/img/tiktok.svg" alt="Facebook">
+                <img src="../img/tiktok.svg" alt="tiktok">
             </a>
         </div>
     </footer>

@@ -4,23 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi tienda</title>
+    <title>SEASON STORE</title>
+    <!-- Hoja de estilos principal -->
     <link rel="stylesheet" href="/css/style.css">
+    <!--Fonts de Google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
 </head>
 
 <body class="body">
+    <!-- Encabezado del sitio con logo y menú -->
     <header class="header">
         <div class="overlay">
+            <!-- Barra de búsqueda -->
             <div class="barBusca">
                 <form action="" method="post">
                     <input type="search" placeholder="Buscar...">
                     <button type="submit">Buscar</button>
                 </form>
             </div>
-
+            <!-- Menú de navegación principal -->    
             <nav class="menu">
                 <ul>
                     <li><a href="#">Inicio</a></li>
@@ -39,22 +43,42 @@
                 <div>
                     <img src="/img/promoMujeres.png" alt="Promo Mujeres">
                 </div>
-                <div>
-                    <button>Ver Más</button>
+                <div class="main-div-button-girl">
+                    <button><a class="button-publicy" href="pages/mujer.html"><span>VER MÁS</span></a></button>
                 </div>
             </article>
             <article>
                 <div>
                     <img src="/img/promoHombres.png" alt="Promo Mujeres">
                 </div>
+                <div class="main-div-button-boy">
+                    <button><a class="button-publicy" href="pages/hombre.html"><span>VER MÁS</span></a></button>
+                </div>
+            </article>
+        </section>
+        <h2>Lo más buscado</h2>
+        <section>
+            <article class="section-article-boy">
                 <div>
-                    <button>Ver más</button>
+                    <img src="/img/conjuntoBoy.png" alt="Ropa">
+                </div>
+                <div>
+                    <p>$$$Precio$$$</p>
+                </div>
+            </article>
+            <article class="section-article-fem">
+                <div>
+                    <img src="/img/conjuntoFem.png" alt="Ropa">
+                </div>
+                <div>
+                    <p>$$$Precio$$$</p>
                 </div>
             </article>
         </section>
     </main>
     <footer class="footer">
         <p>SEASON CBA©| Todos los derechos reservados.</p>
+        <!--Redes Sociales-->
         <div class="social-icons">
             <a href="https://www.instagram.com" target="_blank">
                 <img src="/img/instagram.svg" alt="Instagram">
@@ -63,7 +87,7 @@
                 <img src="/img/facebook.svg" alt="Facebook">
             </a>
             <a href="https://www.tiktok.com" target="_blank">
-                <img src="/img/tiktok.svg" alt="Facebook">
+                <img src="/img/tiktok.svg" alt="tiktok">
             </a>
         </div>
     </footer>
