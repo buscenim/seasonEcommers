@@ -1,0 +1,67 @@
+.header {
+    background: url('/img/seasonLogo.png') no-repeat center center;
+    background-size: cover; /* Para que ocupe todo el ancho */
+    height: 400px; /* Podés ajustar la altura */
+    position: relative;
+    color: white;
+    text-align: center;
+    font-family: "Story Script", sans-serif;
+}
+
+.header .overlay {
+    background: rgba(0, 0, 0, 0.4); /* Oscurece un poco la imagen para que el texto se lea mejor */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.header .mod-circ {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.barBusca input[type="search"] {
+    padding: 5px;
+    font-family: "Story Script", sans-serif;
+}
+
+.barBusca button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.body{
+    background-color: black;
+    font-family: "Story Script", sans-serif;
+}
+
+main{
+    color: white;
+    justify-content: center;
+}
+
+.footer{
+    color: black;
+    font-family: "Story Script", sans-serif;
+    background-color: aliceblue;
+}
