@@ -1,6 +1,6 @@
 /* ======== ENCABEZADO ======== */
 .header {
-    background: url('/img/seasonLogo.png') no-repeat center center;
+    background: url('../img/seasonLogo.png') no-repeat center center;
     background-size: cover; /* Para que ocupe todo el ancho */
     height: 300px; /* Ajustar la altura del banner */
     position: relative;
