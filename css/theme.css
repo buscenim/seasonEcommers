@@ -1,0 +1,44 @@
+:root {
+    --brand-primary: #6CE5B1;
+    --brand-accent: #FF7D7D;
+    --brand-bg: #0E0F13;
+    --brand-surface: #16181D;
+    --brand-text: #EDEFF4;
+    --brand-muted: #A6ADBB;
+    --brand-gradient: linear-gradient(135deg, #20222A 0%, #121318 100%);
+}
+
+/* Overrides Bootstrap (vía CSS vars) */
+:root {
+    --bs-body-bg: var(--brand-bg);
+    --bs-body-color: var(--brand-text);
+    --bs-primary: var(--brand-primary);
+    --bs-link-color: var(--brand-primary);
+    --bs-border-color: #2A2E36;
+    --bs-card-bg: var(--brand-surface);
+}
+
+body {
+    font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+.display-4 {
+    font-family: "Playfair Display", Georgia, serif
+}
+
+/* Tipografías fluidas */
+h1 {
+    font-size: clamp(1.8rem, 2.5vw+1rem, 3rem)
+}
+
+h2 {
+    font-size: clamp(1.4rem, 1.5vw+1rem, 2rem)
+}
+
+/* Contenedores */
+.container {
+    max-width: 1120px
+}
