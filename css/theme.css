@@ -42,3 +42,24 @@ h2 {
 .container {
     max-width: 1120px
 }
+
+
+
+/* Evitar overflow-x */
+html,
+body {
+    overflow-x: hidden
+}
+
+/* Preferencia de esquema */
+@media (prefers-color-scheme: light) {
+    :root {
+        --bs-body-bg: #f7f7f9;
+        --bs-body-color: #222;
+        --bs-border-color: #e0e3ea
+    }
+
+    .bg-black {
+        background: #0E0F13 !important
+    }
+}
