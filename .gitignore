@@ -1,0 +1,7 @@
+# SO/editores
+.DS_Store
+Thumbs.db
+.vscode/
+#build caches
+node_modules
+.Dist/
