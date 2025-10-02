@@ -4,72 +4,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <title>SEASON - Quienes somos</title>
+    <meta name="description" content="SEASON Store - Moda circular y accesorios. Envíos a todo el país.">
+    <meta name="keywords" content="moda, ropa, mujer, hombre, vintage, circular, Córdoba">
+    <meta name="theme-color" content="#0E0F13">
+    <link rel="icon" href="../assets/favicon.ico">
+    <!-- Preconexiones -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
-    <title>SEASON - Quienes somos</title>
+    <!-- Fuentes -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS (animaciones al hacer scroll) -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body class="body">
-    <header class="header">
-        <div class="overlay">
-            <div class="barBusca">
-                <form action="" method="post">
-                    <input type="search" placeholder="Buscar...">
-                    <button type="submit">Buscar</button>
-                </form>
+<body class="bg-dark text-light">
+    <header class="sticky-top shadow-sm" role="banner">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
+                    <img src="../img/seasonLogo.svg" alt="Logo SEASON" width="28" height="28" />
+                    <strong>SEASON</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/mujer.html">Mujer</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/hombre.html">Hombre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/quienes-somos.html">Quiénes somos</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
+                    </ul>
+                    <form class="d-flex ms-lg-3 mt-3 mt-lg-0" role="search" id="searchForm">
+                        <label class="visually-hidden" for="q">Buscar</label>
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" id="q">
+                        <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
             </div>
-
-            <nav class="menu">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../pages/mujer.html">Mujer</a></li>
-                    <li><a href="../pages/hombre.html">Hombre</a></li>
-                    <li><a href="../pages/quienes-somos.html">Quienes Somos</a></li>
-                    <li><a href="../pages/contacto.html">Contactanos</a></li>
-                </ul>
-            </nav>
-        </div>
+        </nav>
     </header>
-    <main class="main">
-        <h1>Quienes somos</h1>
-        <div class="mian-div-text">
-            <p>Somos <strong>SEASON</strong>, un proyecto de Córdoba Capital que nació con la idea de darle una segunda
-                oportunidad a la ropa y a los accesorios que todavía tienen mucho para dar.
-
-                Creemos que la moda no tiene por qué ser descartable: cada prenda tiene su historia y puede seguir
-                sumando
-                momentos con alguien nuevo. Por eso apostamos a la moda circular, porque nos gusta la idea de vestir
-                distinto, cuidar el planeta y, de paso, hacer que la moda sea más accesible para todos.
-
-                Acá vas a encontrar prendas únicas, seleccionadas con onda y con la idea de que te sientas vos mismo al
-                usarlas. Queremos que cada compra sea más que un simple “me gustó y lo llevo”: que también signifique
-                formar
-                parte de un cambio de mentalidad sobre cómo consumimos moda.
-
-                En pocas palabras: nos mueve el estilo, la creatividad y las ganas de hacer las cosas de otra manera. Y
-                si
-                estás leyendo esto, seguramente vos también.</p>
-        </div>
-        <div class="main-div-logo">
-            <img src="../img/logo.png" alt="Logo SEASON">
+    <main class="container py-5">
+        <header class="mb-4">
+            <h1 class="h2">Quiénes somos</h1>
+        </header>
+        <div class="row g-5">
+            <div class="col-12 col-lg-7">
+                <article class="content">
+                    <p>Somos SEASON, un proyecto de Córdoba Capital que nació con la idea de darle una segunda
+                        oportunidad a la ropa y a los accesorios que todavía tienen mucho para dar. Creemos que la moda
+                        no tiene por qué ser descartable: cada prenda tiene su historia y puede seguir sumando momentos
+                        con alguien nuevo. Por eso apostamos a la moda circular, porque nos gusta la idea de vestir
+                        distinto, cuidar el planeta y, de paso, hacer que la moda sea más accesible para todos. Acá vas
+                        a encontrar prendas únicas, seleccionadas con onda y con la idea de que te sientas vos mismo al
+                        usarlas. Queremos que cada compra sea más que un simple “me gustó y lo llevo”: que también
+                        signifique formar parte de un cambio de mentalidad sobre cómo consumimos moda. En pocas
+                        palabras: nos mueve el estilo, la creatividad y las ganas de hacer las cosas de otra manera. Y
+                        si estás leyendo esto, seguramente vos también.</p>
+                    <figure class="my-4">
+                        <img src="../img/seasonLogo.svg" alt="Logo SEASON" width="160" height="160">
+                        <figcaption class="text-secondary small">Nuestra identidad, simple y consciente.</figcaption>
+                    </figure>
+                </article>
+            </div>
+            <div class="col-12 col-lg-5">
+                <aside class="p-4 rounded-3 border border-secondary-subtle bg-black">
+                    <h2 class="h5">Valores</h2>
+                    <ul class="mt-3 mb-0">
+                        <li>Moda circular y responsable</li>
+                        <li>Curaduría de prendas únicas</li>
+                        <li>Transparencia y cercanía</li>
+                    </ul>
+                </aside>
+            </div>
         </div>
     </main>
-    <footer class="footer">
-        <p>SEASON CBA©| Todos los derechos reservados.</p>
-        <div class="social-icons">
-            <a href="https://www.instagram.com" target="_blank">
-                <img src="../img/instagram.svg" alt="Instagram">
-            </a>
-            <a href="https://www.facebook.com" target="_blank">
-                <img src="../img/facebook.svg" alt="Facebook">
-            </a>
-            <a href="https://www.tiktok.com" target="_blank">
-                <img src="../img/tiktok.svg" alt="tiktok">
-            </a>
+    <footer class="mt-5 bg-black text-secondary pt-5 pb-4" role="contentinfo">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <h5 class="text-white">SEASON CBA</h5>
+                    <p class="mb-1">Moda circular desde Córdoba.</p>
+                    <small>© SEASON CBA — Todos los derechos reservados.</small>
+                </div>
+                <div class="col-6 col-md-4">
+                    <h6 class="text-white">Secciones</h6>
+                    <ul class="list-unstyled">
+                        <li><a class="link-light link-opacity-75" href="../index.html">Inicio</a></li>
+                        <li><a class="link-light link-opacity-75" href="../pages/mujer.html">Mujer</a></li>
+                        <li><a class="link-light link-opacity-75" href="../pages/hombre.html">Hombre</a></li>
+                        <li><a class="link-light link-opacity-75" href="../pages/quienes-somos.html">Quiénes somos</a>
+                        </li>
+                        <li><a class="link-light link-opacity-75" href="../pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4">
+                    <h6 class="text-white">Seguinos</h6>
+                    <div class="d-flex gap-3 fs-4">
+                        <a class="text-light" aria-label="Instagram" href="https://www.instagram.com/" target="_blank"
+                            rel="noopener"><i class="fab fa-instagram"></i></a>
+                        <a class="text-light" aria-label="Facebook" href="https://www.facebook.com/" target="_blank"
+                            rel="noopener"><i class="fab fa-facebook"></i></a>
+                        <a class="text-light" aria-label="TikTok" href="https://www.tiktok.com/" target="_blank"
+                            rel="noopener"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
+    <!-- JS: Bootstrap + AOS + app -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

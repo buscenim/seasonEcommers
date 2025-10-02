@@ -1,73 +1,37 @@
-/* ======== ENCABEZADO ======== */
-.header {
-    background: url('../img/seasonLogo.png') no-repeat center center;
-    background-size: cover; /* Para que ocupe todo el ancho */
-    height: 300px; /* Ajustar la altura del banner */
-    position: relative;
-    color: white;
-    text-align: center;
-    font-family: "Story Script", sans-serif;
+/* Barra de navegación */
+.navbar-brand strong {
+  letter-spacing: .5px
 }
 
-.header .overlay {
-    background: rgba(0, 0, 0, 0.4); 
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/* Links en footer */
+footer a {
+  text-decoration: none
 }
 
-.header h1 {
-    font-size: 2.5rem;
-    margin: 0;
+footer a:hover {
+  text-decoration: underline
 }
 
-.header .mod-circ {
-    font-size: 1.2rem;
-    margin: 10px 0;
-}
-/* ======== MENÚ DE NAVEGACIÓN ======== */
-.menu ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 20px;
+/* Formularios */
+form .form-control {
+  background-color: #0e0f13;
+  border-color: #2A2E36;
+  color: var(--brand-text)
 }
 
-.menu a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-/* ======== BARRA DE BÚSQUEDA ======== */
-.barBusca input[type="search"] {
-    padding: 5px;
-    font-family: "Story Script", sans-serif;
+form .form-control:focus {
+  border-color: var(--brand-primary);
+  box-shadow: none
 }
 
-.barBusca button {
-    padding: 5px 10px;
-    cursor: pointer;
+/* Newsletter */
+#newsletterForm .btn {
+  min-height: 48px
 }
 
-.body{
-    background-color: black;
-    font-family: "Story Script", sans-serif;
-}
-
-.button-publicy{
-    text-decoration: none;
-    color: black;
-}
-/* ======== CONTENIDO PRINCIPAL ======== */
-main{
-    color: white;
-    justify-content: center;
-}
-/* ======== FOOTER ======== */
-.footer{
-    color: black;
-    font-family: "Story Script", sans-serif;
-    background-color: aliceblue;
+/* Helpers responsivos */
+@media (max-width: 576px) {
+  .hero .display-4 {
+    font-size: 2rem
+  }
 }

@@ -1,105 +1,233 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es-AR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SEASON Store — Mujer</title>
+    <meta name="description" content="SEASON Store - Moda circular y accesorios. Envíos a todo el país.">
+    <meta name="keywords" content="moda, ropa, mujer, hombre, vintage, circular, Córdoba">
+    <meta name="theme-color" content="#0E0F13">
+    <link rel="icon" href="../assets/favicon.ico">
+    <!-- Preconexiones -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
-    <title>SEASON - Mujer</title>
+    <!-- Fuentes -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS (animaciones al hacer scroll) -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-<body class="body">
-    <header class="header">
-        <div class="overlay">
-            <div class="barBusca">
-                <form action="" method="post">
-                    <input type="search" placeholder="Buscar...">
-                    <button type="submit">Buscar</button>
-                </form>
+
+<body class="bg-dark text-light">
+    <header class="sticky-top shadow-sm" role="banner">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
+                    <img src="../img/seasonLogo.svg" alt="Logo SEASON" width="28" height="28" />
+                    <strong>SEASON</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/mujer.html">Mujer</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/hombre.html">Hombre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/quienes-somos.html">Quiénes somos</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
+                    </ul>
+                    <form class="d-flex ms-lg-3 mt-3 mt-lg-0" role="search" id="searchForm">
+                        <label class="visually-hidden" for="q">Buscar</label>
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" id="q">
+                        <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
             </div>
-
-            <nav class="menu">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../pages/mujer.html">Mujer</a></li>
-                    <li><a href="../pages/hombre.html">Hombre</a></li>
-                    <li><a href="../pages/quienes-somos.html">Quienes Somos</a></li>
-                    <li><a href="../pages/contacto.html">Contactanos</a></li>
-                </ul>
-            </nav>
-        </div>
+        </nav>
     </header>
-    <main class="main">
-        <h1>Conjutos</h1>
-        <section>
-            <article class="section-article-fem">
-                <div>
-                    <img src="../img/conjuntoFem.png" alt="Ropa">
-                </div>
-                <div>
-                    <p>$$$Precio$$$</p>
-                </div>
-            </article>
-            <article>
-                <div>
-                    <img src="../img/conjuntoFem.png" alt="Ropa">
-                </div>
-                <div>
-                    <p>$$$Precio$$$</p>
-                </div>
-            </article>
-            <article>
-                <div>
-                    <img src="../img/conjuntoFem.png" alt="Ropa">
-                </div>
-                <div>
-                    <p>$$$Precio$$$</p>
-                </div>
-            </article>
-        </section>
-        <h2>Calzado</h2>
-        <section class="section-shoes">
-            <article class="section-article-shoes">
-                <div>
-                    <img src="../img/conjuntoFem.png" alt="Calzado">
-                </div>
-                <div>
-                    <p>$$$Precio$$$</p>
-                </div>
-            </article>
-            <article>
-                <div>
-                    <img src="../img/conjuntoFem.png" alt="Calzado">
-                </div>
-                <div>
-                    <p>$$$Precio$$$</p>
-                </div>
-            </article>
-            <article>
-                <div>
-                    <img src="../img/conjuntoFem.png" alt="Calzado">
-                </div>
-                <div>
-                    <p>$$$Precio$$$</p>
-                </div>
-            </article>
-        </section>
-
+    <main class="container py-5">
+        <header class="mb-4">
+            <h1 class="h2">Mujer</h1>
+            <p class="text-secondary m-0">Conjuntos y calzado seleccionados.</p>
+        </header>
+        <div class="d-flex flex-wrap gap-2 mb-4">
+            <button class="btn btn-outline-light btn-sm filter" data-filter="todo">Todo</button>
+            <button class="btn btn-outline-light btn-sm filter" data-filter="conjuntos">Conjuntos</button>
+            <button class="btn btn-outline-light btn-sm filter" data-filter="calzado">Calzado</button>
+        </div>
+        <div class="row g-4" id="gridMujer">
+            <div class="col-6 col-md-4 col-lg-3" data-category="conjuntos">
+                <article class="card product-card h-100"><img class="card-img-top"
+                        src="https://picsum.photos/200/300" alt="Producto mujer 1" loading="lazy"
+                        width="300" height="400">
+                    <div class="card-body py-3">
+                        <h3 class="card-title h6 mb-1">Prenda Mujer 1</h3>
+                        <p class="card-text small text-secondary m-0">$ 1200</p>
+                    </div>
+                </article>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3" data-category="conjuntos">
+                <article class="card product-card h-100"><img class="card-img-top"
+                        src="https://picsum.photos/200/300" alt="Producto mujer 2" loading="lazy"
+                        width="300" height="400">
+                    <div class="card-body py-3">
+                        <h3 class="card-title h6 mb-1">Prenda Mujer 2</h3>
+                        <p class="card-text small text-secondary m-0">$ 2400</p>
+                    </div>
+                </article>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3" data-category="conjuntos">
+                <article class="card product-card h-100"><img class="card-img-top"
+                        src="https://picsum.photos/200/300" alt="Producto mujer 3" loading="lazy"
+                        width="300" height="400">
+                    <div class="card-body py-3">
+                        <h3 class="card-title h6 mb-1">Prenda Mujer 3</h3>
+                        <p class="card-text small text-secondary m-0">$ 3600</p>
+                    </div>
+                </article>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3" data-category="conjuntos">
+                <article class="card product-card h-100"><img class="card-img-top"
+                        src="https://picsum.photos/200/300" alt="Producto mujer 4" loading="lazy"
+                        width="300" height="400">
+                    <div class="card-body py-3">
+                        <h3 class="card-title h6 mb-1">Prenda Mujer 4</h3>
+                        <p class="card-text small text-secondary m-0">$ 4800</p>
+                    </div>
+                </article>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3" data-category="conjuntos">
+                <article class="card product-card h-100"><img class="card-img-top"
+                        src="https://picsum.photos/200/300" alt="Producto mujer 5" loading="lazy"
+                        width="300" height="400">
+                    <div class="card-body py-3">
+                        <h3 class="card-title h6 mb-1">Prenda Mujer 5</h3>
+                        <p class="card-text small text-secondary m-0">$ 6000</p>
+                    </div>
+                </article>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3" data-category="conjuntos">
+                <article class="card product-card h-100"><img class="card-img-top"
+                        src="https://picsum.photos/200/300" alt="Producto mujer 6" loading="lazy"
+                        width="300" height="400">
+                    <div class="card-body py-3">
+                        <h3 class="card-title h6 mb-1">Prenda Mujer 6</h3>
+                        <p class="card-text small text-secondary m-0">$ 7200</p>
+                    </div>
+                </article>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3" data-category="calzado">
+                <article class="card product-card h-100"><img class="card-img-top"
+                        src="https://picsum.photos/200/300" alt="Producto mujer 7" loading="lazy"
+                        width="300" height="400">
+                    <div class="card-body py-3">
+                        <h3 class="card-title h6 mb-1">Prenda Mujer 7</h3>
+                        <p class="card-text small text-secondary m-0">$ 8400</p>
+                    </div>
+                </article>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3" data-category="calzado">
+                <article class="card product-card h-100"><img class="card-img-top"
+                        src="https://picsum.photos/200/300" alt="Producto mujer 8" loading="lazy"
+                        width="300" height="400">
+                    <div class="card-body py-3">
+                        <h3 class="card-title h6 mb-1">Prenda Mujer 8</h3>
+                        <p class="card-text small text-secondary m-0">$ 9600</p>
+                    </div>
+                </article>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3" data-category="calzado">
+                <article class="card product-card h-100"><img class="card-img-top"
+                        src="https://picsum.photos/200/300" alt="Producto mujer 9" loading="lazy"
+                        width="300" height="400">
+                    <div class="card-body py-3">
+                        <h3 class="card-title h6 mb-1">Prenda Mujer 9</h3>
+                        <p class="card-text small text-secondary m-0">$ 10800</p>
+                    </div>
+                </article>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3" data-category="calzado">
+                <article class="card product-card h-100"><img class="card-img-top"
+                        src="https://picsum.photos/200/300" alt="Producto mujer 10"
+                        loading="lazy" width="300" height="400">
+                    <div class="card-body py-3">
+                        <h3 class="card-title h6 mb-1">Prenda Mujer 10</h3>
+                        <p class="card-text small text-secondary m-0">$ 12000</p>
+                    </div>
+                </article>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3" data-category="calzado">
+                <article class="card product-card h-100"><img class="card-img-top"
+                        src="https://picsum.photos/200/300" alt="Producto mujer 11"
+                        loading="lazy" width="300" height="400">
+                    <div class="card-body py-3">
+                        <h3 class="card-title h6 mb-1">Prenda Mujer 11</h3>
+                        <p class="card-text small text-secondary m-0">$ 13200</p>
+                    </div>
+                </article>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3" data-category="calzado">
+                <article class="card product-card h-100"><img class="card-img-top"
+                        src="https://picsum.photos/200/300" alt="Producto mujer 12"
+                        loading="lazy" width="300" height="400">
+                    <div class="card-body py-3">
+                        <h3 class="card-title h6 mb-1">Prenda Mujer 12</h3>
+                        <p class="card-text small text-secondary m-0">$ 14400</p>
+                    </div>
+                </article>
+            </div>
+        </div>
     </main>
-    <footer class="footer">
-        <p>SEASON CBA©| Todos los derechos reservados.</p>
-        <div class="social-icons">
-            <a href="https://www.instagram.com" target="_blank">
-                <img src="../img/instagram.svg" alt="Instagram">
-            </a>
-            <a href="https://www.facebook.com" target="_blank">
-                <img src="../img/facebook.svg" alt="Facebook">
-            </a>
-            <a href="https://www.tiktok.com" target="_blank">
-                <img src="../img/tiktok.svg" alt="tiktok">
-            </a>
+    <footer class="mt-5 bg-black text-secondary pt-5 pb-4" role="contentinfo">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <h5 class="text-white">SEASON CBA</h5>
+                    <p class="mb-1">Moda circular desde Córdoba.</p>
+                    <small>© SEASON CBA — Todos los derechos reservados.</small>
+                </div>
+                <div class="col-6 col-md-4">
+                    <h6 class="text-white">Secciones</h6>
+                    <ul class="list-unstyled">
+                        <li><a class="link-light link-opacity-75" href="../index.html">Inicio</a></li>
+                        <li><a class="link-light link-opacity-75" href="../pages/mujer.html">Mujer</a></li>
+                        <li><a class="link-light link-opacity-75" href="../pages/hombre.html">Hombre</a></li>
+                        <li><a class="link-light link-opacity-75" href="../pages/quienes-somos.html">Quiénes somos</a>
+                        </li>
+                        <li><a class="link-light link-opacity-75" href="../pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4">
+                    <h6 class="text-white">Seguinos</h6>
+                    <div class="d-flex gap-3 fs-4">
+                        <a class="text-light" aria-label="Instagram" href="https://www.instagram.com/" target="_blank"
+                            rel="noopener"><i class="fab fa-instagram"></i></a>
+                        <a class="text-light" aria-label="Facebook" href="https://www.facebook.com/" target="_blank"
+                            rel="noopener"><i class="fab fa-facebook"></i></a>
+                        <a class="text-light" aria-label="TikTok" href="https://www.tiktok.com/" target="_blank"
+                            rel="noopener"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
+    <!-- JS: Bootstrap + AOS + app -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
