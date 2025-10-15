@@ -44,7 +44,7 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="../pages/mujer.html">Mujer</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../pages/hombre.html">Hombre</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="../pages/hombre.html">Hombre</a></li>
                         <li class="nav-item"><a class="nav-link" href="../pages/quienes-somos.html">Quiénes somos</a>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
@@ -59,137 +59,108 @@
         </nav>
     </header>
     <main class="container py-5">
-        <section class="mb-4">
-            <h1 class="h2">Hombre</h1>
-            <p class="text-secondary m-0">Conjuntos y calzado seleccionados.</p>
+        <section class="mb-5">
+            <h1 class="display-5 fw-bold fs-3">Colección Hombre</h1>
+            <p class="lead text-secondary mb-0 fs-5">Conjuntos y calzado seleccionados para vos.</p>
         </section>
-        <div class="d-flex flex-wrap gap-2 mb-4">
-            <button class="btn btn-outline-light btn-sm filter" data-filter="todo">Todo</button>
-            <button class="btn btn-outline-light btn-sm filter" data-filter="conjuntos">Conjuntos</button>
-            <button class="btn btn-outline-light btn-sm filter" data-filter="calzado">Calzado</button>
-        </div>
-        <div class="row g-4" id="gridHombre">
-            <div class="col-6 col-md-4 col-lg-3" data-category="conjuntos">
-                <article class="card product-card h-100"><img class="card-img-top"
-                        src="https://picsum.photos/200/300" alt="Producto hombre 1"
-                        loading="lazy" width="300" height="400">
+
+        <section class="mb-4">
+            <div class="d-flex flex-wrap gap-2">
+                <button class="btn btn-outline-light btn-sm filter" data-filter="todo">Todo</button>
+                <button class="btn btn-outline-light btn-sm filter" data-filter="conjuntos">Conjuntos</button>
+                <button class="btn btn-outline-light btn-sm filter" data-filter="calzado">Calzado</button>
+            </div>
+        </section>
+        <section id="gridHombre" class="row g-4">
+
+            <div class="col-6 col-md-4 col-lg-3" data-category="conjuntos" data-aos="fade-up">
+                <article class="card product-card h-100">
+                    <img src="https://picsum.photos/300/400?random=1" class="card-img-top" alt="Prenda Hombre 1"
+                        loading="lazy">
                     <div class="card-body py-3">
-                        <h3 class="card-title h6 mb-1">Prenda Hombre 1</h3>
-                        <p class="card-text small text-secondary m-0">$ 1300</p>
+                        <h2 class="card-title h6 mb-1">Prenda Hombre 1</h2>
+                        <p class="card-text small text-secondary m-0">$ 13.000</p>
                     </div>
                 </article>
             </div>
-            <div class="col-6 col-md-4 col-lg-3" data-category="conjuntos">
-                <article class="card product-card h-100"><img class="card-img-top"
-                        src="https://picsum.photos/200/300" alt="Producto hombre 2"
-                        loading="lazy" width="300" height="400">
+
+            <div class="col-6 col-md-4 col-lg-3" data-category="calzado" data-aos="fade-up" data-aos-delay="50">
+                <article class="card product-card h-100">
+                    <img src="https://picsum.photos/300/400?random=2" class="card-img-top" alt="Prenda Hombre 2"
+                        loading="lazy">
                     <div class="card-body py-3">
-                        <h3 class="card-title h6 mb-1">Prenda Hombre 2</h3>
-                        <p class="card-text small text-secondary m-0">$ 2600</p>
+                        <h2 class="card-title h6 mb-1">Prenda Hombre 2</h2>
+                        <p class="card-text small text-secondary m-0">$ 15.600</p>
                     </div>
                 </article>
             </div>
-            <div class="col-6 col-md-4 col-lg-3" data-category="conjuntos">
-                <article class="card product-card h-100"><img class="card-img-top"
-                        src="https://picsum.photos/200/300" alt="Producto hombre 3"
-                        loading="lazy" width="300" height="400">
+
+            <div class="col-6 col-md-4 col-lg-3" data-category="conjuntos" data-aos="fade-up">
+                <article class="card product-card h-100">
+                    <img src="https://picsum.photos/300/400?random=1" class="card-img-top" alt="Prenda Hombre 3"
+                        loading="lazy">
                     <div class="card-body py-3">
-                        <h3 class="card-title h6 mb-1">Prenda Hombre 3</h3>
-                        <p class="card-text small text-secondary m-0">$ 3900</p>
+                        <h2 class="card-title h6 mb-1">Prenda Hombre 3</h2>
+                        <p class="card-text small text-secondary m-0">$ 13.000</p>
                     </div>
                 </article>
             </div>
-            <div class="col-6 col-md-4 col-lg-3" data-category="conjuntos">
-                <article class="card product-card h-100"><img class="card-img-top"
-                        src="https://picsum.photos/200/300" alt="Producto hombre 4"
-                        loading="lazy" width="300" height="400">
+
+            <div class="col-6 col-md-4 col-lg-3" data-category="calzado" data-aos="fade-up" data-aos-delay="50">
+                <article class="card product-card h-100">
+                    <img src="https://picsum.photos/300/400?random=2" class="card-img-top" alt="Prenda Hombre 4"
+                        loading="lazy">
                     <div class="card-body py-3">
-                        <h3 class="card-title h6 mb-1">Prenda Hombre 4</h3>
-                        <p class="card-text small text-secondary m-0">$ 5200</p>
+                        <h2 class="card-title h6 mb-1">Prenda Hombre 4</h2>
+                        <p class="card-text small text-secondary m-0">$ 15.600</p>
                     </div>
                 </article>
             </div>
-            <div class="col-6 col-md-4 col-lg-3" data-category="conjuntos">
-                <article class="card product-card h-100"><img class="card-img-top"
-                        src="https://picsum.photos/200/300" alt="Producto hombre 5"
-                        loading="lazy" width="300" height="400">
+
+            <div class="col-6 col-md-4 col-lg-3" data-category="conjuntos" data-aos="fade-up">
+                <article class="card product-card h-100">
+                    <img src="https://picsum.photos/300/400?random=1" class="card-img-top" alt="Prenda Hombre 5"
+                        loading="lazy">
                     <div class="card-body py-3">
-                        <h3 class="card-title h6 mb-1">Prenda Hombre 5</h3>
-                        <p class="card-text small text-secondary m-0">$ 6500</p>
+                        <h2 class="card-title h6 mb-1">Prenda Hombre 5</h2>
+                        <p class="card-text small text-secondary m-0">$ 13.000</p>
                     </div>
                 </article>
             </div>
-            <div class="col-6 col-md-4 col-lg-3" data-category="conjuntos">
-                <article class="card product-card h-100"><img class="card-img-top"
-                        src="https://picsum.photos/200/300" alt="Producto hombre 6"
-                        loading="lazy" width="300" height="400">
+
+            <div class="col-6 col-md-4 col-lg-3" data-category="calzado" data-aos="fade-up" data-aos-delay="50">
+                <article class="card product-card h-100">
+                    <img src="https://picsum.photos/300/400?random=2" class="card-img-top" alt="Prenda Hombre 6"
+                        loading="lazy">
                     <div class="card-body py-3">
-                        <h3 class="card-title h6 mb-1">Prenda Hombre 6</h3>
-                        <p class="card-text small text-secondary m-0">$ 7800</p>
+                        <h2 class="card-title h6 mb-1">Prenda Hombre 6</h2>
+                        <p class="card-text small text-secondary m-0">$ 15.600</p>
                     </div>
                 </article>
             </div>
-            <div class="col-6 col-md-4 col-lg-3" data-category="calzado">
-                <article class="card product-card h-100"><img class="card-img-top"
-                        src="https://picsum.photos/200/300" alt="Producto hombre 7"
-                        loading="lazy" width="300" height="400">
+
+            <div class="col-6 col-md-4 col-lg-3" data-category="conjuntos" data-aos="fade-up">
+                <article class="card product-card h-100">
+                    <img src="https://picsum.photos/300/400?random=1" class="card-img-top" alt="Prenda Hombre 7"
+                        loading="lazy">
                     <div class="card-body py-3">
-                        <h3 class="card-title h6 mb-1">Prenda Hombre 7</h3>
-                        <p class="card-text small text-secondary m-0">$ 9100</p>
+                        <h2 class="card-title h6 mb-1">Prenda Hombre 7</h2>
+                        <p class="card-text small text-secondary m-0">$ 13.000</p>
                     </div>
                 </article>
             </div>
-            <div class="col-6 col-md-4 col-lg-3" data-category="calzado">
-                <article class="card product-card h-100"><img class="card-img-top"
-                        src="https://picsum.photos/200/300" alt="Producto hombre 8"
-                        loading="lazy" width="300" height="400">
+
+            <div class="col-6 col-md-4 col-lg-3" data-category="calzado" data-aos="fade-up" data-aos-delay="50">
+                <article class="card product-card h-100">
+                    <img src="https://picsum.photos/300/400?random=2" class="card-img-top" alt="Prenda Hombre 8"
+                        loading="lazy">
                     <div class="card-body py-3">
-                        <h3 class="card-title h6 mb-1">Prenda Hombre 8</h3>
-                        <p class="card-text small text-secondary m-0">$ 10400</p>
+                        <h2 class="card-title h6 mb-1">Prenda Hombre 8</h2>
+                        <p class="card-text small text-secondary m-0">$ 15.600</p>
                     </div>
                 </article>
             </div>
-            <div class="col-6 col-md-4 col-lg-3" data-category="calzado">
-                <article class="card product-card h-100"><img class="card-img-top"
-                        src="https://picsum.photos/200/300" alt="Producto hombre 9"
-                        loading="lazy" width="300" height="400">
-                    <div class="card-body py-3">
-                        <h3 class="card-title h6 mb-1">Prenda Hombre 9</h3>
-                        <p class="card-text small text-secondary m-0">$ 11700</p>
-                    </div>
-                </article>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3" data-category="calzado">
-                <article class="card product-card h-100"><img class="card-img-top"
-                        src="https://picsum.photos/200/300" alt="Producto hombre 10"
-                        loading="lazy" width="300" height="400">
-                    <div class="card-body py-3">
-                        <h3 class="card-title h6 mb-1">Prenda Hombre 10</h3>
-                        <p class="card-text small text-secondary m-0">$ 13000</p>
-                    </div>
-                </article>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3" data-category="calzado">
-                <article class="card product-card h-100"><img class="card-img-top"
-                        src="https://picsum.photos/200/300" alt="Producto hombre 11"
-                        loading="lazy" width="300" height="400">
-                    <div class="card-body py-3">
-                        <h3 class="card-title h6 mb-1">Prenda Hombre 11</h3>
-                        <p class="card-text small text-secondary m-0">$ 14300</p>
-                    </div>
-                </article>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3" data-category="calzado">
-                <article class="card product-card h-100"><img class="card-img-top"
-                        src="https://picsum.photos/200/300" alt="Producto hombre 12"
-                        loading="lazy" width="300" height="400">
-                    <div class="card-body py-3">
-                        <h3 class="card-title h6 mb-1">Prenda Hombre 12</h3>
-                        <p class="card-text small text-secondary m-0">$ 15600</p>
-                    </div>
-                </article>
-            </div>
-        </div>
+        </section>
     </main>
     <footer class="mt-5 bg-black text-secondary pt-5 pb-4" role="contentinfo">
         <div class="container">
