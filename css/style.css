@@ -35,3 +35,15 @@ form .form-control:focus {
     font-size: 2rem
   }
 }
+
+.navbar .nav-link.active {
+  color: var(--brand-primary) !important;
+  font-weight: 600;
+  border-bottom: 2px solid var(--brand-primary);
+  transition: all 0.2s ease-in-out;
+}
+
+
+.navbar .nav-link:hover {
+  color: var(--brand-primary) !important;
+}
