@@ -1,0 +1,67 @@
+/* botones */
+.btn-primary {
+  background-color: $brand-primary;
+  color: #000;
+  border: none;
+  border-radius: $radius;
+  padding: 0.75rem 1.25rem;
+  font-weight: 600;
+  transition: all $transition;
+
+  &:hover {
+    background-color: $brand-accent;
+    color: #000;
+  }
+}
+
+.btn-outline-light {
+  background: transparent;
+  color: $text-light;
+  border: 1px solid $text-light;
+  border-radius: $radius;
+  padding: 0.75rem 1.25rem;
+  transition: all $transition;
+
+  &:hover {
+    background-color: $brand-accent;
+    color: #000;
+    border-color: $brand-accent;
+  }
+}
+
+/* cards prod */
+.card {
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: $radius;
+  transition: transform $transition, box-shadow $transition;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: $shadow;
+  }
+
+  .card-title {
+    color: $brand-primary;
+  }
+
+  .card-text {
+    color: $text-muted;
+  }
+}
+
+/* formularios */
+form {
+  .form-label { color: $text-light; }
+
+  .form-control {
+    background-color: $brand-surface;
+    border: 1px solid #2A2E36;
+    color: $text-light;
+
+    &:focus {
+      border-color: $brand-primary;
+      box-shadow: 0 0 0 0.25rem rgba(108,229,177,0.25);
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@mixin flex-center($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button-style($bg, $color: #fff) {
+  background-color: $bg;
+  color: $color;
+  border: none;
+  border-radius: $radius;
+  padding: 0.75rem 1.25rem;
+  font-weight: 600;
+  transition: background-color $transition;
+
+  &:hover {
+    background-color: lighten($bg, 10%);
+  }
+}
+
+@mixin responsive($break) {
+  @if $break == mobile {
+    @media (max-width: 576px) { @content; }
+  } @else if $break == tablet {
+    @media (max-width: 768px) { @content; }
+  } @else if $break == desktop {
+    @media (min-width: 992px) { @content; }
+  }
+}

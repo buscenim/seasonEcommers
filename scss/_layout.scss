@@ -1,0 +1,106 @@
+header {
+  background-color: black;
+  box-shadow: $shadow;
+
+  nav {
+    .navbar-brand {
+      font-weight: 700;
+      color: $brand-primary;
+
+      &:hover {
+        color: $brand-accent;
+      }
+    }
+
+    .nav-link {
+      color: $text-light;
+      transition: color $transition;
+
+      &.active {
+        color: $brand-primary;
+        border-bottom: 2px solid $brand-primary;
+      }
+
+      &:hover {
+        color: $brand-accent;
+      }
+    }
+  }
+}
+
+main {
+  section {
+    padding: 4rem 0;
+  }
+
+  .hero {
+    background: url('../img/hero-bg.jpg') center/cover no-repeat;
+    text-align: center;
+    padding: 6rem 1rem;
+
+    h1 {
+      color: $brand-primary;
+      font-size: 2.5rem;
+    }
+
+    p {
+      color: $text-muted;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+section.text-center.mb-4 {
+  margin-top: -1rem;
+}
+
+
+section .row.justify-content-center {
+  text-align: center;
+
+  figure {
+    @include flex-center(column);
+  }
+}
+
+footer {
+  background-color: black;
+  color: $text-muted;
+  padding: 3rem 0;
+  text-align: center;
+
+  a {
+    color: $text-light;
+    position: relative;
+    display: inline-block;
+    transition: color $transition;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      width: 0%;
+      height: 2px;
+      background-color: $brand-primary;
+      transition: width $transition;
+    }
+
+    &:hover {
+      color: $brand-accent;
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  h5, h6 {
+    color: $text-light;
+    margin-bottom: 0.5rem;
+  }
+
+  .d-flex {
+    justify-content: center;
+  }
+}

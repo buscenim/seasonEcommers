@@ -1,0 +1,22 @@
+{
+  "name": "seasonecommers",
+  "version": "1.0.0",
+  "description": "GIT URL: https://github.com/buscenim/seasonEcommers.git",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buscenim/seasonEcommers.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/buscenim/seasonEcommers/issues"
+  },
+  "homepage": "https://github.com/buscenim/seasonEcommers#readme"
+}

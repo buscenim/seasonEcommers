@@ -1,37 +1,223 @@
-/* Barra de navegación */
-.navbar-brand strong {
-  letter-spacing: .5px
+body {
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+  background-color: #0E0F13;
+  line-height: 1.6;
+  margin: 0;
 }
 
-/* Links en footer */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  font-weight: 700;
+  transition: color 0.3s ease-in-out;
+}
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+  color: #6CE5B1;
+}
+
+a {
+  color: #6CE5B1;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+a:hover {
+  color: #FF7D7D;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: black;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+header nav .navbar-brand {
+  font-weight: 700;
+  color: #6CE5B1;
+}
+header nav .navbar-brand:hover {
+  color: #FF7D7D;
+}
+header nav .nav-link {
+  color: #ffffff;
+  transition: color 0.3s ease-in-out;
+}
+header nav .nav-link.active {
+  color: #6CE5B1;
+  border-bottom: 2px solid #6CE5B1;
+}
+header nav .nav-link:hover {
+  color: #FF7D7D;
+}
+
+main section {
+  padding: 4rem 0;
+}
+main .hero {
+  background: url("../img/hero-bg.jpg") center/cover no-repeat;
+  text-align: center;
+  padding: 6rem 1rem;
+}
+main .hero h1 {
+  color: #6CE5B1;
+  font-size: 2.5rem;
+}
+main .hero p {
+  color: #999999;
+  font-size: 1.1rem;
+}
+
+section.text-center.mb-4 {
+  margin-top: -1rem;
+}
+
+section .row.justify-content-center {
+  text-align: center;
+}
+section .row.justify-content-center figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: black;
+  color: #999999;
+  padding: 3rem 0;
+  text-align: center;
+}
 footer a {
-  text-decoration: none
+  color: #ffffff;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease-in-out;
 }
-
+footer a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: #6CE5B1;
+  transition: width 0.3s ease-in-out;
+}
 footer a:hover {
-  text-decoration: underline
+  color: #FF7D7D;
+}
+footer a:hover::after {
+  width: 100%;
+}
+footer h5, footer h6 {
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+footer .d-flex {
+  justify-content: center;
 }
 
-/* Formularios */
+/* botones */
+.btn-primary {
+  background-color: #6CE5B1;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.25rem;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+.btn-primary:hover {
+  background-color: #FF7D7D;
+  color: #000;
+}
+
+.btn-outline-light {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  padding: 0.75rem 1.25rem;
+  transition: all 0.3s ease-in-out;
+}
+.btn-outline-light:hover {
+  background-color: #FF7D7D;
+  color: #000;
+  border-color: #FF7D7D;
+}
+
+/* cards prod */
+.card {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+.card .card-title {
+  color: #6CE5B1;
+}
+.card .card-text {
+  color: #999999;
+}
+
+/* formularios */
+form .form-label {
+  color: #ffffff;
+}
 form .form-control {
-  background-color: #0e0f13;
-  border-color: #2A2E36;
-  color: var(--brand-text)
+  background-color: #16181D;
+  border: 1px solid #2A2E36;
+  color: #ffffff;
 }
-
 form .form-control:focus {
-  border-color: var(--brand-primary);
-  box-shadow: none
+  border-color: #6CE5B1;
+  box-shadow: 0 0 0 0.25rem rgba(108, 229, 177, 0.25);
 }
 
-/* Newsletter */
-#newsletterForm .btn {
-  min-height: 48px
-}
-
-/* Helpers responsivos */
 @media (max-width: 576px) {
-  .hero .display-4 {
-    font-size: 2rem
+  h1 {
+    font-size: 1.8rem;
+  }
+  .hero {
+    padding: 3rem 1rem;
+    background-position: top;
+  }
+  body {
+    font-size: 0.95rem;
+  }
+  .btn-primary {
+    padding: 0.5rem 1rem;
+  }
+  .card {
+    margin-bottom: 1rem;
   }
 }
+footer {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 1300px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
