@@ -1,0 +1,34 @@
+body {
+  font-family: $font-body;
+  color: $text-light;
+  background-color: $dark-bg;
+  line-height: 1.6;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-title;
+  color: $brand-primary;
+  font-weight: 700;
+}
+
+a {
+  color: $brand-primary;
+  text-decoration: none;
+  transition: color $transition;
+
+  &:hover {
+    color: $brand-accent;
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
