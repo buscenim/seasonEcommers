@@ -47,3 +47,14 @@ form .form-control:focus {
 .navbar .nav-link:hover {
   color: var(--brand-primary) !important;
 }
+
+.btn-primary {
+  background-color: var(--brand-primary);
+  border-color: var(--brand-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--brand-accent);
+  border-color: var(--brand-accent);
+  color: #0e0f13;
+}
