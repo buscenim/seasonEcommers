@@ -52,3 +52,22 @@
     }
   }
 }
+
+/* === ANIMACIONES === */
+.hero h1, .hero p {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.card {
+  transition: transform $transition, box-shadow $transition;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: $shadow;
+  }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
