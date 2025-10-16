@@ -91,4 +91,61 @@ footer h5, footer h6 {
   margin-bottom: 0.5rem;
 }
 
+/* BOTONES */
+.btn-primary {
+  background-color: #6CE5B1;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.25rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease-in-out;
+}
+.btn-primary:hover {
+  background-color: rgb(151.3352601156, 236.6647398844, 199.9942196532);
+}
+
+.btn-outline-light {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  padding: 0.75rem 1.25rem;
+  transition: all 0.3s ease-in-out;
+}
+.btn-outline-light:hover {
+  background-color: #ffffff;
+  color: #0E0F13;
+}
+
+/* CARDS */
+.card {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card .card-title {
+  color: #6CE5B1;
+}
+.card .card-text {
+  color: #999999;
+}
+
+/* FORMULARIO NEWSLETTER */
+#newsletterForm .form-control,
+#newsletterForm .btn {
+  height: 48px;
+  border-radius: 8px;
+}
+#newsletterForm .btn {
+  background-color: #6CE5B1;
+}
+#newsletterForm .btn:hover {
+  background-color: #FF7D7D;
+}
+
 /*# sourceMappingURL=style.css.map */

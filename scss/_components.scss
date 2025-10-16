@@ -1,0 +1,54 @@
+/* BOTONES */
+.btn-primary {
+  @include button-style($brand-primary);
+}
+
+.btn-outline-light {
+  background: transparent;
+  color: $text-light;
+  border: 1px solid $text-light;
+  border-radius: $radius;
+  padding: 0.75rem 1.25rem;
+  transition: all $transition;
+
+  &:hover {
+    background-color: $text-light;
+    color: $dark-bg;
+  }
+}
+
+/* CARDS */
+.card {
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: $radius;
+  transition: transform $transition;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  .card-title {
+    color: $brand-primary;
+  }
+
+  .card-text {
+    color: $text-muted;
+  }
+}
+
+/* FORMULARIO NEWSLETTER */
+#newsletterForm {
+  .form-control,
+  .btn {
+    height: 48px;
+    border-radius: $radius;
+  }
+
+  .btn {
+    background-color: $brand-primary;
+    &:hover {
+      background-color: $brand-accent;
+    }
+  }
+}
