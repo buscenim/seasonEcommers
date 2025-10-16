@@ -1,0 +1,73 @@
+/* HEADER / NAVBAR */
+header {
+  background-color: black;
+  box-shadow: $shadow;
+
+  nav {
+    .navbar-brand {
+      font-weight: 700;
+      color: $brand-primary;
+
+      &:hover {
+        color: $brand-accent;
+      }
+    }
+
+    .nav-link {
+      color: $text-light;
+      transition: color $transition;
+
+      &.active {
+        color: $brand-primary;
+        border-bottom: 2px solid $brand-primary;
+      }
+
+      &:hover {
+        color: $brand-accent;
+      }
+    }
+  }
+}
+
+/*  MAIN / CONTENIDO  */
+main {
+  section {
+    padding: 5rem 0;
+  }
+
+  .hero {
+    background: url('../img/hero-bg.jpg') center/cover no-repeat;
+    text-align: center;
+    padding: 6rem 1rem;
+
+    h1 {
+      color: $brand-primary;
+      font-size: 2.5rem;
+    }
+
+    p {
+      color: $text-muted;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+/* === FOOTER === */
+footer {
+  background-color: black;
+  color: $text-muted;
+  padding: 3rem 0;
+
+  a {
+    color: $text-light;
+
+    &:hover {
+      color: $brand-accent;
+    }
+  }
+
+  h5, h6 {
+    color: $text-light;
+    margin-bottom: 0.5rem;
+  }
+}
