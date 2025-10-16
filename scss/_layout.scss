@@ -1,4 +1,3 @@
-/* HEADER / NAVBAR */
 header {
   background-color: black;
   box-shadow: $shadow;
@@ -29,10 +28,9 @@ header {
   }
 }
 
-/*  MAIN / CONTENIDO  */
 main {
   section {
-    padding: 5rem 0;
+    padding: 4rem 0;
   }
 
   .hero {
@@ -52,22 +50,57 @@ main {
   }
 }
 
-/* === FOOTER === */
+section.text-center.mb-4 {
+  margin-top: -1rem;
+}
+
+
+section .row.justify-content-center {
+  text-align: center;
+
+  figure {
+    @include flex-center(column);
+  }
+}
+
 footer {
   background-color: black;
   color: $text-muted;
   padding: 3rem 0;
+  text-align: center;
 
   a {
     color: $text-light;
+    position: relative;
+    display: inline-block;
+    transition: color $transition;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      width: 0%;
+      height: 2px;
+      background-color: $brand-primary;
+      transition: width $transition;
+    }
 
     &:hover {
       color: $brand-accent;
+
+      &::after {
+        width: 100%;
+      }
     }
   }
 
   h5, h6 {
     color: $text-light;
     margin-bottom: 0.5rem;
+  }
+
+  .d-flex {
+    justify-content: center;
   }
 }

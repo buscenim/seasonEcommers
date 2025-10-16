@@ -1,6 +1,17 @@
-/* BOTONES */
+/* botones */
 .btn-primary {
-  @include button-style($brand-primary);
+  background-color: $brand-primary;
+  color: #000;
+  border: none;
+  border-radius: $radius;
+  padding: 0.75rem 1.25rem;
+  font-weight: 600;
+  transition: all $transition;
+
+  &:hover {
+    background-color: $brand-accent;
+    color: #000;
+  }
 }
 
 .btn-outline-light {
@@ -12,20 +23,22 @@
   transition: all $transition;
 
   &:hover {
-    background-color: $text-light;
-    color: $dark-bg;
+    background-color: $brand-accent;
+    color: #000;
+    border-color: $brand-accent;
   }
 }
 
-/* CARDS */
+/* cards prod */
 .card {
   background-color: transparent;
   border: 1px solid rgba(255,255,255,0.1);
   border-radius: $radius;
-  transition: transform $transition;
+  transition: transform $transition, box-shadow $transition;
 
   &:hover {
     transform: translateY(-5px);
+    box-shadow: $shadow;
   }
 
   .card-title {
@@ -37,37 +50,18 @@
   }
 }
 
-/* FORMULARIO NEWSLETTER */
-#newsletterForm {
-  .form-control,
-  .btn {
-    height: 48px;
-    border-radius: $radius;
-  }
+/* formularios */
+form {
+  .form-label { color: $text-light; }
 
-  .btn {
-    background-color: $brand-primary;
-    &:hover {
-      background-color: $brand-accent;
+  .form-control {
+    background-color: $brand-surface;
+    border: 1px solid #2A2E36;
+    color: $text-light;
+
+    &:focus {
+      border-color: $brand-primary;
+      box-shadow: 0 0 0 0.25rem rgba(108,229,177,0.25);
     }
   }
-}
-
-/* === ANIMACIONES === */
-.hero h1, .hero p {
-  animation: fadeInUp 1s ease-in-out;
-}
-
-.card {
-  transition: transform $transition, box-shadow $transition;
-
-  &:hover {
-    transform: translateY(-6px);
-    box-shadow: $shadow;
-  }
-}
-
-@keyframes fadeInUp {
-  0% { opacity: 0; transform: translateY(30px); }
-  100% { opacity: 1; transform: translateY(0); }
 }

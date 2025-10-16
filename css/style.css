@@ -8,8 +8,12 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", serif;
-  color: #6CE5B1;
+  color: #fff;
   font-weight: 700;
+  transition: color 0.3s ease-in-out;
+}
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+  color: #6CE5B1;
 }
 
 a {
@@ -32,7 +36,6 @@ img {
   margin: 0 auto;
 }
 
-/* HEADER / NAVBAR */
 header {
   background-color: black;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
@@ -56,9 +59,8 @@ header nav .nav-link:hover {
   color: #FF7D7D;
 }
 
-/*  MAIN / CONTENIDO  */
 main section {
-  padding: 5rem 0;
+  padding: 4rem 0;
 }
 main .hero {
   background: url("../img/hero-bg.jpg") center/cover no-repeat;
@@ -74,35 +76,69 @@ main .hero p {
   font-size: 1.1rem;
 }
 
-/* === FOOTER === */
+section.text-center.mb-4 {
+  margin-top: -1rem;
+}
+
+section .row.justify-content-center {
+  text-align: center;
+}
+section .row.justify-content-center figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 footer {
   background-color: black;
   color: #999999;
   padding: 3rem 0;
+  text-align: center;
 }
 footer a {
   color: #ffffff;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease-in-out;
+}
+footer a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: #6CE5B1;
+  transition: width 0.3s ease-in-out;
 }
 footer a:hover {
   color: #FF7D7D;
+}
+footer a:hover::after {
+  width: 100%;
 }
 footer h5, footer h6 {
   color: #ffffff;
   margin-bottom: 0.5rem;
 }
+footer .d-flex {
+  justify-content: center;
+}
 
-/* BOTONES */
+/* botones */
 .btn-primary {
   background-color: #6CE5B1;
-  color: #fff;
+  color: #000;
   border: none;
   border-radius: 8px;
   padding: 0.75rem 1.25rem;
   font-weight: 600;
-  transition: background-color 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .btn-primary:hover {
-  background-color: rgb(151.3352601156, 236.6647398844, 199.9942196532);
+  background-color: #FF7D7D;
+  color: #000;
 }
 
 .btn-outline-light {
@@ -114,19 +150,21 @@ footer h5, footer h6 {
   transition: all 0.3s ease-in-out;
 }
 .btn-outline-light:hover {
-  background-color: #ffffff;
-  color: #0E0F13;
+  background-color: #FF7D7D;
+  color: #000;
+  border-color: #FF7D7D;
 }
 
-/* CARDS */
+/* cards prod */
 .card {
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 .card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 .card .card-title {
   color: #6CE5B1;
@@ -135,43 +173,20 @@ footer h5, footer h6 {
   color: #999999;
 }
 
-/* FORMULARIO NEWSLETTER */
-#newsletterForm .form-control,
-#newsletterForm .btn {
-  height: 48px;
-  border-radius: 8px;
+/* formularios */
+form .form-label {
+  color: #ffffff;
 }
-#newsletterForm .btn {
-  background-color: #6CE5B1;
+form .form-control {
+  background-color: #16181D;
+  border: 1px solid #2A2E36;
+  color: #ffffff;
 }
-#newsletterForm .btn:hover {
-  background-color: #FF7D7D;
-}
-
-/* === ANIMACIONES === */
-.hero h1, .hero p {
-  animation: fadeInUp 1s ease-in-out;
+form .form-control:focus {
+  border-color: #6CE5B1;
+  box-shadow: 0 0 0 0.25rem rgba(108, 229, 177, 0.25);
 }
 
-.card {
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-}
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-/* === MEDIA QUERIES === */
 @media (max-width: 576px) {
   h1 {
     font-size: 1.8rem;
@@ -180,10 +195,20 @@ footer h5, footer h6 {
     padding: 3rem 1rem;
     background-position: top;
   }
-  footer {
-    text-align: center;
+  body {
+    font-size: 0.95rem;
+  }
+  .btn-primary {
+    padding: 0.5rem 1rem;
+  }
+  .card {
+    margin-bottom: 1rem;
   }
 }
+footer {
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 2rem;

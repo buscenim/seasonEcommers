@@ -8,8 +8,13 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-title;
-  color: $brand-primary;
+  color: #fff;
   font-weight: 700;
+  transition: color $transition;
+
+  &:hover {
+    color: $brand-primary;
+  }
 }
 
 a {

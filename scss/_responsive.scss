@@ -1,4 +1,3 @@
-/* === MEDIA QUERIES === */
 @include responsive(mobile) {
   h1 {
     font-size: 1.8rem;
@@ -9,9 +8,21 @@
     background-position: top;
   }
 
-  footer {
-    text-align: center;
+  body {
+    font-size: 0.95rem;
   }
+
+  .btn-primary {
+    padding: 0.5rem 1rem;
+  }
+
+  .card {
+    margin-bottom: 1rem;
+  }
+}
+
+footer {
+  text-align: center;
 }
 
 @include responsive(tablet) {
