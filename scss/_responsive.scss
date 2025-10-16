@@ -1,0 +1,29 @@
+/* === MEDIA QUERIES === */
+@include responsive(mobile) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero {
+    padding: 3rem 1rem;
+    background-position: top;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+
+@include responsive(tablet) {
+  .hero {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}
+
+@include responsive(desktop) {
+  .container {
+    max-width: 1300px;
+  }
+}

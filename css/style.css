@@ -148,4 +148,28 @@ footer h5, footer h6 {
   background-color: #FF7D7D;
 }
 
+/* === MEDIA QUERIES === */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  .hero {
+    padding: 3rem 1rem;
+    background-position: top;
+  }
+  footer {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 1300px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
