@@ -12,34 +12,40 @@
     <meta name="theme-color" content="#0E0F13">
 
     <link rel="icon" href="../assets/favicon.ico">
+
     <!-- Preconexiones -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Canonical-->
+
+    <!-- Canonical -->
     <link rel="canonical" href="https://buscenim.github.io/seasonEcommers/pages/contacto.html">
     <meta name="robots" content="index, follow">
 
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Contacto | Season">
     <meta property="og:description" content="Contactate con Season y unite a la moda circular sustentable.">
     <meta property="og:url" content="https://buscenim.github.io/seasonEcommers/pages/contacto.html">
     <meta property="og:image" content="https://buscenim.github.io/seasonEcommers/assets/img/og-contacto.jpg">
+    <meta property="og:locale" content="es_AR">
 
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Contacto | Season">
     <meta name="twitter:description" content="Contactanos para conocer más sobre Season y la moda sustentable.">
     <meta name="twitter:image" content="https://buscenim.github.io/seasonEcommers/assets/img/og-contacto.jpg">
+
     <!-- Fuentes -->
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
         rel="stylesheet">
-    <!-- Bootstrap CSS -->
+
+    <!-- CSS libs -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- AOS (animaciones al hacer scroll) -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <!-- Iconos -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
     <!-- Estilos propios -->
     <link rel="stylesheet" href="../css/theme.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -53,10 +59,7 @@
     "url": "https://buscenim.github.io/seasonEcommers/pages/contacto.html",
     "description": "Comunicate con SEASON para consultas, compras o colaboraciones. Moda circular sustentable desde Córdoba.",
     "inLanguage": "es-AR",
-    "publisher": {
-      "@type": "Organization",
-      "name": "SEASON"
-    },
+    "publisher": { "@type": "Organization", "name": "SEASON" },
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "customer service",
@@ -69,8 +72,14 @@
 </head>
 
 <body class="bg-dark text-light">
+    <!-- Skip link -->
+    <a class="visually-hidden-focusable position-absolute top-0 start-0 m-2 p-2 bg-dark text-white rounded"
+        href="#contenido">
+        Saltar al contenido principal
+    </a>
+
     <header class="sticky-top shadow-sm" role="banner">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black" role="navigation" aria-label="Navegación principal">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
                     <img src="../img/seasonLogo.svg" alt="Logo SEASON" width="28" height="28" />
@@ -87,18 +96,21 @@
                         <li class="nav-item"><a class="nav-link" href="../pages/hombre.html">Hombre</a></li>
                         <li class="nav-item"><a class="nav-link" href="../pages/quienes-somos.html">Quiénes somos</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link active" href="../pages/contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page"
+                                href="../pages/contacto.html">Contacto</a></li>
                     </ul>
                     <form class="d-flex ms-lg-3 mt-3 mt-lg-0" role="search" id="searchForm">
                         <label class="visually-hidden" for="q">Buscar</label>
                         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" id="q">
-                        <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
+                        <button class="btn btn-primary" type="submit" aria-label="Buscar"><i class="fa fa-search"
+                                aria-hidden="true"></i></button>
                     </form>
                 </div>
             </div>
         </nav>
     </header>
-    <main class="container py-5">
+
+    <main id="contenido" class="container py-5">
         <section class="mb-4">
             <h1 class="display-5 fw-bold fs-3">Contactanos</h1>
             <p class="lead text-secondary mb-0 fs-6">
@@ -107,46 +119,66 @@
                 o completá el formulario.
             </p>
         </section>
+
         <section class="row g-5 align-items-start">
-            <div class="col-12 col-lg-7">
+            <div class="col-12 col-lg-7" data-aos="fade-up">
                 <h2 class="h5 mb-4">Formulario de contacto</h2>
-                <form class="row g-3" id="contactForm" novalidate>
+
+                <form class="row g-3 needs-validation" id="contactForm" novalidate role="form"
+                    aria-describedby="formHelp">
+                    <p id="formHelp" class="visually-hidden">Todos los campos son obligatorios.</p>
+
                     <div class="col-md-6">
                         <label for="nombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" required>
+                        <input type="text" class="form-control" id="nombre" name="nombre" autocomplete="given-name"
+                            required>
                         <div class="invalid-feedback">Ingresá tu nombre.</div>
                     </div>
+
                     <div class="col-md-6">
                         <label for="apellido" class="form-label">Apellido</label>
-                        <input type="text" class="form-control" id="apellido" required>
+                        <input type="text" class="form-control" id="apellido" name="apellido" autocomplete="family-name"
+                            required>
                         <div class="invalid-feedback">Ingresá tu apellido.</div>
                     </div>
+
                     <div class="col-md-6">
                         <label for="telefono" class="form-label">Teléfono</label>
-                        <input type="tel" class="form-control" id="telefono" pattern="[0-9\-\+\s]{6,}" required>
+                        <input type="tel" class="form-control" id="telefono" name="telefono" inputmode="tel"
+                            pattern="[0-9\-\+\s]{6,}" autocomplete="tel" required>
                         <div class="invalid-feedback">Ingresá un teléfono válido.</div>
                     </div>
+
                     <div class="col-md-6">
                         <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" required>
+                        <input type="email" class="form-control" id="email" name="email" autocomplete="email" required>
                         <div class="invalid-feedback">Ingresá un email válido.</div>
                     </div>
+
                     <div class="col-12">
                         <label for="mensaje" class="form-label">Mensaje</label>
-                        <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+                        <textarea class="form-control" id="mensaje" name="mensaje" rows="4" autocomplete="off"
+                            required></textarea>
                         <div class="invalid-feedback">Escribí tu mensaje.</div>
                     </div>
+
+                    <div class="d-none" aria-hidden="true">
+                        <label for="website">Sitio web</label>
+                        <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                    </div>
+
                     <div class="col-12 text-end">
                         <button class="btn btn-primary px-4" type="submit">Enviar</button>
                     </div>
                 </form>
             </div>
 
-            <div class="col-12 col-lg-5">
+            <div class="col-12 col-lg-5" data-aos="fade-up" data-aos-delay="100">
                 <div class="ratio ratio-16x9 rounded overflow-hidden border border-secondary-subtle shadow-sm">
                     <iframe src="https://maps.google.com/maps?q=Córdoba%20Capital&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                        title="Mapa Córdoba" loading="lazy"></iframe>
+                        title="Mapa Córdoba" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
+
                 <div class="d-flex justify-content-center gap-4 fs-3 mt-4">
                     <a class="text-light" aria-label="Instagram" href="https://www.instagram.com/" target="_blank"
                         rel="noopener"><i class="fab fa-instagram"></i></a>
@@ -192,11 +224,30 @@
             </div>
         </div>
     </footer>
-    <!-- JS: Bootstrap + AOS + app -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script src="../js/main.js"></script>
 
+    <!-- JS: Bootstrap + AOS + validación -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (window.AOS) AOS.init({ once: true, duration: 600, offset: 80 });
+
+            const form = document.getElementById('contactForm');
+            form.addEventListener('submit', function (e) {
+                
+                if (document.getElementById('website').value) {
+                    e.preventDefault();
+                    return;
+                }
+                if (!form.checkValidity()) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+        });
+    </script>
+    <script defer src="../js/main.js"></script>
 </body>
 
 </html>

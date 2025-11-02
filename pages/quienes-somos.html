@@ -21,6 +21,7 @@
   <meta property="og:description" content="Conocé el equipo de Season y nuestra misión por una moda más sustentable.">
   <meta property="og:url" content="https://buscenim.github.io/seasonEcommers/pages/quienes-somos.html">
   <meta property="og:image" content="https://buscenim.github.io/seasonEcommers/assets/img/og-nosotros.jpg">
+  <meta property="og:locale" content="es_AR">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Quiénes Somos | Season">
@@ -41,7 +42,7 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- AOS (animaciones al hacer scroll) -->
+  <!-- AOS -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
   <!-- Iconos -->
@@ -60,19 +61,21 @@
     "url": "https://buscenim.github.io/seasonEcommers/pages/quienes-somos.html",
     "description": "Conocé la historia de SEASON, un proyecto de moda circular nacido en Córdoba para promover el consumo responsable.",
     "inLanguage": "es-AR",
-    "publisher": {
-      "@type": "Organization",
-      "name": "SEASON"
-    }
+    "publisher": { "@type": "Organization", "name": "SEASON" }
   }
   </script>
 </head>
 
 <body class="bg-dark text-light">
+  <!-- Skip link -->
+  <a class="visually-hidden-focusable position-absolute top-0 start-0 m-2 p-2 bg-dark text-white rounded"
+    href="#contenido">
+    Saltar al contenido principal
+  </a>
 
   <!-- navbar -->
   <header class="sticky-top shadow-sm" role="banner">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black" role="navigation" aria-label="Navegación principal">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
           <img src="../img/seasonLogo.svg" alt="Logo SEASON" width="28" height="28">
@@ -88,21 +91,22 @@
             <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
             <li class="nav-item"><a class="nav-link" href="../pages/mujer.html">Mujer</a></li>
             <li class="nav-item"><a class="nav-link" href="../pages/hombre.html">Hombre</a></li>
-            <li class="nav-item"><a class="nav-link active" href="../pages/quienes-somos.html">Quiénes somos</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page"
+                href="../pages/quienes-somos.html">Quiénes somos</a></li>
             <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
           </ul>
           <form class="d-flex ms-lg-3 mt-3 mt-lg-0" role="search" id="searchForm">
             <label class="visually-hidden" for="q">Buscar</label>
             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" id="q">
-            <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
+            <button class="btn btn-primary" type="submit" aria-label="Buscar"><i class="fa fa-search"
+                aria-hidden="true"></i></button>
           </form>
         </div>
       </div>
     </nav>
   </header>
 
-  <main class="container py-5">
-
+  <main id="contenido" class="container py-5">
     <!-- Introducción -->
     <section class="text-center mb-5" data-aos="fade-up">
       <h1 class="display-5 fw-bold">Quiénes somos</h1>
@@ -115,8 +119,9 @@
     <!-- Filosofía -->
     <section class="row align-items-center g-5 mb-5" data-aos="fade-up" data-aos-delay="100">
       <div class="col-12 col-md-6">
-        <figure class="rounded overflow-hidden shadow-sm">
-          <img src="https://picsum.photos/600/400?random=30" alt="Tienda SEASON Córdoba" class="img-fluid">
+        <figure class="rounded overflow-hidden shadow-sm m-0">
+          <img src="https://picsum.photos/600/400?random=30" alt="Tienda SEASON Córdoba" class="img-fluid"
+            loading="lazy" width="600" height="400">
         </figure>
       </div>
       <div class="col-12 col-md-6">
@@ -134,19 +139,19 @@
       <h2 class="h4 fw-semibold mb-4">Nuestros valores</h2>
       <div class="row g-4 justify-content-center">
         <article class="col-10 col-md-4">
-          <i class="fa-solid fa-leaf fs-1 mb-3 text-primary"></i>
+          <i class="fa-solid fa-leaf fs-1 mb-3 text-primary" aria-hidden="true"></i>
           <h3 class="h5">Sustentabilidad</h3>
           <p class="text-secondary small">Reducimos el impacto ambiental a través del reciclaje textil y la economía
             circular.</p>
         </article>
         <article class="col-10 col-md-4">
-          <i class="fa-solid fa-shirt fs-1 mb-3 text-primary"></i>
+          <i class="fa-solid fa-shirt fs-1 mb-3 text-primary" aria-hidden="true"></i>
           <h3 class="h5">Calidad</h3>
           <p class="text-secondary small">Seleccionamos prendas cuidadosamente para asegurar su durabilidad y estilo.
           </p>
         </article>
         <article class="col-10 col-md-4">
-          <i class="fa-solid fa-people-group fs-1 mb-3 text-primary"></i>
+          <i class="fa-solid fa-people-group fs-1 mb-3 text-primary" aria-hidden="true"></i>
           <h3 class="h5">Comunidad</h3>
           <p class="text-secondary small">Trabajamos junto a emprendedores y clientes que comparten nuestra visión
             sostenible.</p>
@@ -159,9 +164,9 @@
       <h2 class="h4 fw-semibold text-center mb-4">Nuestro equipo</h2>
       <div class="row justify-content-center g-4">
         <div class="col-10 col-sm-6 col-md-3">
-          <figure class="text-center">
+          <figure class="text-center m-0">
             <img src="https://picsum.photos/200/200?random=31" alt="Integrante 1 SEASON"
-              class="rounded-circle mb-3 shadow-sm">
+              class="rounded-circle mb-3 shadow-sm" loading="lazy" width="200" height="200">
             <figcaption>
               <strong>Giuliana R.</strong><br>
               <small class="text-secondary">Fundadora & Curadora</small>
@@ -169,9 +174,9 @@
           </figure>
         </div>
         <div class="col-10 col-sm-6 col-md-3">
-          <figure class="text-center">
+          <figure class="text-center m-0">
             <img src="https://picsum.photos/200/200?random=32" alt="Integrante 2 SEASON"
-              class="rounded-circle mb-3 shadow-sm">
+              class="rounded-circle mb-3 shadow-sm" loading="lazy" width="200" height="200">
             <figcaption>
               <strong>Matias B.</strong><br>
               <small class="text-secondary">Diseño & Comunicación</small>
@@ -180,7 +185,6 @@
         </div>
       </div>
     </section>
-
   </main>
 
   <footer class="mt-5 bg-black text-secondary pt-5 pb-4" role="contentinfo">
@@ -205,11 +209,11 @@
           <h6 class="text-white">Seguinos</h6>
           <div class="d-flex gap-3 fs-4">
             <a class="text-light" aria-label="Instagram" href="https://www.instagram.com/" target="_blank"
-              rel="noopener"><i class="fab fa-instagram"></i></a>
+              rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i></a>
             <a class="text-light" aria-label="Facebook" href="https://www.facebook.com/" target="_blank"
-              rel="noopener"><i class="fab fa-facebook"></i></a>
+              rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i></a>
             <a class="text-light" aria-label="TikTok" href="https://www.tiktok.com/" target="_blank" rel="noopener"><i
-                class="fab fa-tiktok"></i></a>
+                class="fab fa-tiktok" aria-hidden="true"></i></a>
           </div>
         </div>
       </div>
@@ -217,9 +221,14 @@
   </footer>
 
   <!-- JS: Bootstrap + AOS + app -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script src="../js/main.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (window.AOS) AOS.init({ once: true, duration: 600, offset: 80 });
+    });
+  </script>
+  <script defer src="../js/main.js"></script>
 </body>
 
 </html>
