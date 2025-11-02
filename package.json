@@ -1,22 +1,29 @@
 {
-  "name": "seasonecommers",
+  "name": "season-ecommers",
   "version": "1.0.0",
-  "description": "GIT URL: https://github.com/buscenim/seasonEcommers.git",
-  "main": "index.js",
+  "description": "Sitio web SEASON E-Commers | Moda circular y sustentable desde Córdoba. Proyecto final con HTML, SASS, Bootstrap y SEO.",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch scss/main.scss css/style.css"
+    "sass": "sass --watch scss/main.scss css/style.css",
+    "sass:build": "sass --no-source-map --style=compressed scss/main.scss css/style.css"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/buscenim/seasonEcommers.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "html",
+    "sass",
+    "bootstrap",
+    "responsive",
+    "seo",
+    "moda",
+    "sustentable"
+  ],
+  "author": "Matias Busceni",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/buscenim/seasonEcommers/issues"
   },
-  "homepage": "https://github.com/buscenim/seasonEcommers#readme"
+  "homepage": "https://buscenim.github.io/seasonEcommers/"
 }
