@@ -6,10 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SEASON - Moda Circular</title>
   <meta name="description"
-    content="SEASON Store - Moda circular desde Córdoba. Prendas seleccionadas para mujer y hombre.">
-  <meta name="keywords" content="moda circular, ropa, vintage, sustentable, Córdoba, mujer, hombre">
+    content="SEASON E-Commers: Moda circular y sustentable desde Córdoba. Ropa de mujer y hombre con conciencia ecológica.">
+  <meta name="keywords"
+    content="moda sustentable, ropa circular, ecofashion, tienda de ropa Córdoba, SEASON, moda ecológica, ropa reciclada">
   <meta name="theme-color" content="#0E0F13">
+  <meta name="robots" content="index, follow">
+
+  <!-- Favicon -->
   <link rel="icon" href="./assets/favicon.ico">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Season | Moda circular desde Córdoba">
+  <meta property="og:description" content="Moda circular, ecológica y con estilo. Prendas seleccionadas desde Córdoba.">
+  <meta property="og:url" content="https://buscenim.github.io/seasonEcommers/">
+  <meta property="og:image" content="https://buscenim.github.io/seasonEcommers/assets/img/og-index.jpg">
+  <meta property="og:locale" content="es_AR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Season | Moda circular desde Córdoba">
+  <meta name="twitter:description" content="Moda circular y ecológica. Descubrí la nueva forma de vestir sustentable.">
+  <meta name="twitter:image" content="https://buscenim.github.io/seasonEcommers/assets/img/og-index.jpg">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://buscenim.github.io/seasonEcommers/index.html">
 
   <!-- Preconexiones -->
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -33,13 +54,31 @@
   <!-- Estilos propios -->
   <link rel="stylesheet" href="./css/theme.css">
   <link rel="stylesheet" href="./css/style.css">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "SEASON E-Commers",
+    "url": "https://buscenim.github.io/seasonEcommers/",
+    "description": "SEASON E-Commers - Moda circular y sustentable desde Córdoba. Ropa de mujer y hombre con conciencia ecológica.",
+    "inLanguage": "es-AR",
+    "publisher": { "@type": "Organization", "name": "SEASON" }
+  }
+  </script>
 </head>
 
 <body class="bg-dark text-light">
+  <!-- Skip link -->
+  <a class="visually-hidden-focusable position-absolute top-0 start-0 m-2 p-2 bg-dark text-white rounded"
+    href="#contenido">
+    Saltar al contenido principal
+  </a>
 
   <!-- navbar -->
   <header class="sticky-top shadow-sm" role="banner">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black" role="navigation" aria-label="Navegación principal">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center gap-2" href="./index.html">
           <img src="./img/seasonLogo.svg" alt="Logo SEASON" width="28" height="28">
@@ -52,7 +91,7 @@
 
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link active" href="./index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.html">Inicio</a></li>
             <li class="nav-item"><a class="nav-link" href="./pages/mujer.html">Mujer</a></li>
             <li class="nav-item"><a class="nav-link" href="./pages/hombre.html">Hombre</a></li>
             <li class="nav-item"><a class="nav-link" href="./pages/quienes-somos.html">Quiénes somos</a></li>
@@ -61,22 +100,24 @@
           <form class="d-flex ms-lg-3 mt-3 mt-lg-0" role="search" id="searchForm">
             <label class="visually-hidden" for="q">Buscar</label>
             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" id="q">
-            <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
+            <button class="btn btn-primary" type="submit" aria-label="Buscar">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
           </form>
         </div>
       </div>
     </nav>
   </header>
 
-  <main>
-
-    <!--Portada -->
+  <main id="contenido">
+    <!-- Portada -->
     <section class="hero bg-black text-center text-light py-5"
       style="background: url('./img/hero-bg.jpg') center/cover no-repeat;">
       <div class="container py-5" data-aos="fade-up">
         <h1 class="display-4 fw-bold mb-3">Moda Circular desde Córdoba</h1>
-        <p class="lead text-secondary mb-4">Elegí prendas únicas, sostenibles y con historia. <br> Reutilizar también es
-          tendencia ♻️</p>
+        <p class="lead text-secondary mb-4">
+          Elegí prendas únicas, sostenibles y con historia. <br> Reutilizar también es tendencia ♻️
+        </p>
         <a href="./pages/mujer.html" class="btn btn-primary me-2">Ver Mujer</a>
         <a href="./pages/hombre.html" class="btn btn-outline-light">Ver Hombre</a>
       </div>
@@ -91,7 +132,8 @@
       <div class="row g-4" data-aos="fade-up" data-aos-delay="100">
         <div class="col-6 col-md-4 col-lg-3">
           <article class="card h-100 bg-dark border-secondary">
-            <img src="https://picsum.photos/300/400?random=51" class="card-img-top" alt="Look mujer otoño">
+            <img src="https://picsum.photos/300/400?random=51" class="card-img-top" alt="Look mujer otoño"
+              loading="lazy" width="300" height="400">
             <div class="card-body text-center">
               <h3 class="card-title h6 mb-1">Look Mujer</h3>
               <p class="card-text small text-secondary">Otoño 2025</p>
@@ -100,7 +142,8 @@
         </div>
         <div class="col-6 col-md-4 col-lg-3">
           <article class="card h-100 bg-dark border-secondary">
-            <img src="https://picsum.photos/300/400?random=52" class="card-img-top" alt="Outfit hombre urbano">
+            <img src="https://picsum.photos/300/400?random=52" class="card-img-top" alt="Outfit hombre urbano"
+              loading="lazy" width="300" height="400">
             <div class="card-body text-center">
               <h3 class="card-title h6 mb-1">Outfit Hombre</h3>
               <p class="card-text small text-secondary">Estilo urbano</p>
@@ -109,7 +152,8 @@
         </div>
         <div class="col-6 col-md-4 col-lg-3">
           <article class="card h-100 bg-dark border-secondary">
-            <img src="https://picsum.photos/300/400?random=53" class="card-img-top" alt="Calzado mujer">
+            <img src="https://picsum.photos/300/400?random=53" class="card-img-top" alt="Calzado mujer" loading="lazy"
+              width="300" height="400">
             <div class="card-body text-center">
               <h3 class="card-title h6 mb-1">Calzado Mujer</h3>
               <p class="card-text small text-secondary">Nuevas tendencias</p>
@@ -118,7 +162,8 @@
         </div>
         <div class="col-6 col-md-4 col-lg-3">
           <article class="card h-100 bg-dark border-secondary">
-            <img src="https://picsum.photos/300/400?random=54" class="card-img-top" alt="Campera reciclada hombre">
+            <img src="https://picsum.photos/300/400?random=54" class="card-img-top" alt="Campera reciclada hombre"
+              loading="lazy" width="300" height="400">
             <div class="card-body text-center">
               <h3 class="card-title h6 mb-1">Camperas Recicladas</h3>
               <p class="card-text small text-secondary">Edición limitada</p>
@@ -136,21 +181,19 @@
           vida.</p>
         <div class="row g-4 justify-content-center">
           <div class="col-10 col-md-4">
-            <i class="fa-solid fa-recycle fs-1 mb-3 text-primary"></i>
+            <i class="fa-solid fa-recycle fs-1 mb-3 text-primary" aria-hidden="true"></i>
             <h3 class="fs-6 fw-semibold">Reutilizar</h3>
-            <p class="small text-secondary">Extendemos el ciclo de vida de la ropa mediante recolección y curaduría.
-            </p>
+            <p class="small text-secondary">Extendemos el ciclo de vida de la ropa mediante recolección y curaduría.</p>
           </div>
           <div class="col-10 col-md-4">
-            <i class="fa-solid fa-heart fs-1 mb-3 text-primary"></i>
+            <i class="fa-solid fa-heart fs-1 mb-3 text-primary" aria-hidden="true"></i>
             <h3 class="fs-6 fw-semibold">Cuidar</h3>
             <p class="small text-secondary">Priorizamos materiales nobles y procesos respetuosos con el ambiente.</p>
           </div>
           <div class="col-10 col-md-4">
-            <i class="fa-solid fa-users fs-1 mb-3 text-primary"></i>
+            <i class="fa-solid fa-users fs-1 mb-3 text-primary" aria-hidden="true"></i>
             <h3 class="fs-6 fw-semibold">Compartir</h3>
-            <p class="small text-secondary">Conectamos con una comunidad que ama la moda y la conciencia ecológica.
-            </p>
+            <p class="small text-secondary">Conectamos con una comunidad que ama la moda y la conciencia ecológica.</p>
           </div>
         </div>
       </div>
@@ -165,15 +208,15 @@
             <p class="text-secondary">Suscribite a nuestro newsletter (podés desuscribirte cuando quieras).</p>
           </div>
           <div class="col-12 col-md-6">
-            <form id="newsletterForm" class="input-group flex-column flex-sm-row gap-2">
-              <input type="email" class="form-control" placeholder="tu@email.com" required>
+            <form id="newsletterForm" class="input-group flex-column flex-sm-row gap-2" novalidate>
+              <label for="emailNews" class="visually-hidden">Email</label>
+              <input id="emailNews" type="email" class="form-control" placeholder="tu@email.com" required>
               <button class="btn btn-primary" type="submit">Suscribirme</button>
             </form>
           </div>
         </div>
       </div>
     </section>
-
   </main>
 
   <footer class="mt-5 bg-black text-secondary pt-5 pb-4" role="contentinfo">
@@ -197,12 +240,18 @@
         <div class="col-6 col-md-4">
           <h6 class="text-white">Seguinos</h6>
           <div class="d-flex gap-3 fs-4">
-            <a class="text-light" aria-label="Instagram" href="https://www.instagram.com/" target="_blank"
-              rel="noopener"><i class="fab fa-instagram"></i></a>
-            <a class="text-light" aria-label="Facebook" href="https://www.facebook.com/" target="_blank"
-              rel="noopener"><i class="fab fa-facebook"></i></a>
-            <a class="text-light" aria-label="TikTok" href="https://www.tiktok.com/" target="_blank" rel="noopener"><i
-                class="fab fa-tiktok"></i></a>
+            <a class="text-light" aria-label="Instagram de Season" href="https://www.instagram.com/" target="_blank"
+              rel="noopener">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a class="text-light" aria-label="Facebook de Season" href="https://www.facebook.com/" target="_blank"
+              rel="noopener">
+              <i class="fab fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a class="text-light" aria-label="TikTok de Season" href="https://www.tiktok.com/" target="_blank"
+              rel="noopener">
+              <i class="fab fa-tiktok" aria-hidden="true"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -210,9 +259,15 @@
   </footer>
 
   <!-- JS: Bootstrap + AOS + app -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script src="./js/main.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    // Inicialización AOS y pequeños helpers accesibles
+    document.addEventListener('DOMContentLoaded', function () {
+      if (window.AOS) AOS.init({ once: true, duration: 600, offset: 80 });
+    });
+  </script>
+  <script defer src="./js/main.js"></script>
 </body>
 
 </html>
