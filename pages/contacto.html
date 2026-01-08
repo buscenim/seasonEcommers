@@ -105,6 +105,18 @@
                         <button class="btn btn-primary" type="submit" aria-label="Buscar"><i class="fa fa-search"
                                 aria-hidden="true"></i></button>
                     </form>
+                    <!-- Botón Carrito -->
+                    <button class="btn btn-outline-light ms-lg-3 mt-3 mt-lg-0 position-relative" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas">
+                        <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                        <span class="visually-hidden">Abrir carrito</span>
+
+                        <span id="cartBadge"
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                            style="display:none;">
+                            0
+                        </span>
+                    </button>
                 </div>
             </div>
         </nav>
@@ -234,7 +246,7 @@
 
             const form = document.getElementById('contactForm');
             form.addEventListener('submit', function (e) {
-                
+
                 if (document.getElementById('website').value) {
                     e.preventDefault();
                     return;
