@@ -239,7 +239,7 @@ footer {
 
 .newsletter-form .form-control{
   width: 100%;
-  min-height: 44px;        /* tamaño táctil mínimo */
+  min-height: 44px;        
   padding: .75rem 1rem;
 }
 
