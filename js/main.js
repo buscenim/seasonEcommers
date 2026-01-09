@@ -40,4 +40,18 @@ window.addEventListener('DOMContentLoaded', () => {
       feedback.classList.remove('d-none');
     });
   }
+  const newsletterForm = document.getElementById('newsletterForm');
+  if (newsletterForm) {
+    const feedback = document.getElementById('newsletterFeedback');
+
+    newsletterForm.addEventListener('submit', (e) => {
+      if (!newsletterForm.checkValidity()) return;
+
+      e.preventDefault();
+      feedback.textContent = '¡Gracias por suscribirte! 💚';
+      feedback.classList.remove('d-none');
+      newsletterForm.reset();
+      newsletterForm.classList.remove('was-validated');
+    });
+  }
 });
