@@ -101,6 +101,18 @@
                             <i class="fa fa-search" aria-hidden="true"></i>
                         </button>
                     </form>
+                    <!-- Botón Carrito -->
+                    <button class="btn btn-outline-light ms-lg-3 mt-3 mt-lg-0 position-relative" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas">
+                        <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                        <span class="visually-hidden">Abrir carrito</span>
+
+                        <span id="cartBadge"
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                            style="display:none;">
+                            0
+                        </span>
+                    </button>
                 </div>
             </div>
         </nav>
@@ -122,94 +134,138 @@
             </div>
         </section>
 
-        <section id="gridHombre" class="row g-4">
+        <section id="gridHombre" class="row g-4" data-filter-container>
             <p class="text-secondary mb-4">Explorá nuestra selección de prendas únicas, sostenibles y curadas con amor.
             </p>
 
             <div class="col-6 col-md-4 col-lg-3" data-category="conjuntos" data-aos="fade-up">
-                <article class="card product-card h-100">
-                    <img src="https://picsum.photos/300/400?random=1" class="card-img-top" alt="Conjunto casual masculino en tonos oscuros (Hombre 1)"
-                        loading="lazy" width="300" height="400">
+                <article class="card product-card h-100" data-id="hombre-prenda-1" data-name="Prenda Hombre 1"
+                    data-price="13000" data-img="https://picsum.photos/300/400?random=1">
+                    <img src="https://picsum.photos/300/400?random=1" class="card-img-top"
+                        alt="Conjunto casual masculino en tonos oscuros (Hombre 1)" loading="lazy" width="300"
+                        height="400">
                     <div class="card-body py-3">
                         <h3 class="card-title fs-6 mb-1">Prenda Hombre 1</h3>
                         <p class="card-text small text-secondary m-0">$ 13.000</p>
+
+                        <button class="btn btn-primary btn-sm mt-2 w-100 btn-add-to-cart" type="button">
+                            Agregar
+                        </button>
                     </div>
                 </article>
             </div>
 
             <div class="col-6 col-md-4 col-lg-3" data-category="calzado" data-aos="fade-up" data-aos-delay="50">
-                <article class="card product-card h-100">
-                    <img src="https://picsum.photos/300/400?random=2" class="card-img-top" alt="Zapatillas urbanas blancas con detalles rojos (Calzado Hombre 1)"
-                        loading="lazy" width="300" height="400">
+                <article class="card product-card h-100" data-id="hombre-calzado-1" data-name="Calzado Hombre 1"
+                    data-price="15600" data-img="https://picsum.photos/300/400?random=2">
+                    <img src="https://picsum.photos/300/400?random=2" class="card-img-top"
+                        alt="Zapatillas urbanas blancas con detalles rojos (Calzado Hombre 1)" loading="lazy"
+                        width="300" height="400">
                     <div class="card-body py-3">
                         <h3 class="card-title fs-6 mb-1">Calzado Hombre 1</h3>
                         <p class="card-text small text-secondary m-0">$ 15.600</p>
+
+                        <button class="btn btn-primary btn-sm mt-2 w-100 btn-add-to-cart" type="button">
+                            Agregar
+                        </button>
                     </div>
                 </article>
             </div>
 
             <div class="col-6 col-md-4 col-lg-3" data-category="conjuntos" data-aos="fade-up">
-                <article class="card product-card h-100">
-                    <img src="https://picsum.photos/300/400?random=1" class="card-img-top" alt="Buzo y pantalón deportivo negro (Prenda Hombre 2)"
-                        loading="lazy" width="300" height="400">
+                <article class="card product-card h-100" data-id="hombre-prenda-2" data-name="Prenda Hombre 2"
+                    data-price="13000" data-img="https://picsum.photos/300/400?random=3">
+                    <img src="https://picsum.photos/300/400?random=3" class="card-img-top"
+                        alt="Buzo y pantalón deportivo negro (Prenda Hombre 2)" loading="lazy" width="300" height="400">
                     <div class="card-body py-3">
                         <h3 class="card-title fs-6 mb-1">Prenda Hombre 2</h3>
                         <p class="card-text small text-secondary m-0">$ 13.000</p>
+
+                        <button class="btn btn-primary btn-sm mt-2 w-100 btn-add-to-cart" type="button">
+                            Agregar
+                        </button>
                     </div>
                 </article>
             </div>
 
             <div class="col-6 col-md-4 col-lg-3" data-category="calzado" data-aos="fade-up" data-aos-delay="50">
-                <article class="card product-card h-100">
-                    <img src="https://picsum.photos/300/400?random=2" class="card-img-top" alt="Zapatillas deportivas blancas de running (Calzado Hombre 2)"
-                        loading="lazy" width="300" height="400">
+                <article class="card product-card h-100" data-id="hombre-calzado-2" data-name="Calzado Hombre 2"
+                    data-price="15600" data-img="https://picsum.photos/300/400?random=4">
+                    <img src="https://picsum.photos/300/400?random=4" class="card-img-top"
+                        alt="Zapatillas deportivas blancas de running (Calzado Hombre 2)" loading="lazy" width="300"
+                        height="400">
                     <div class="card-body py-3">
                         <h3 class="card-title fs-6 mb-1">Calzado Hombre 2</h3>
                         <p class="card-text small text-secondary m-0">$ 15.600</p>
+
+                        <button class="btn btn-primary btn-sm mt-2 w-100 btn-add-to-cart" type="button">
+                            Agregar
+                        </button>
                     </div>
                 </article>
             </div>
 
             <div class="col-6 col-md-4 col-lg-3" data-category="conjuntos" data-aos="fade-up">
-                <article class="card product-card h-100">
-                    <img src="https://picsum.photos/300/400?random=1" class="card-img-top" alt="Conjunto deportivo blanco (Prenda Hombre 3)"
-                        loading="lazy" width="300" height="400">
+                <article class="card product-card h-100" data-id="hombre-prenda-3" data-name="Prenda Hombre 3"
+                    data-price="13000" data-img="https://picsum.photos/300/400?random=5">
+                    <img src="https://picsum.photos/300/400?random=5" class="card-img-top"
+                        alt="Conjunto deportivo blanco (Prenda Hombre 3)" loading="lazy" width="300" height="400">
                     <div class="card-body py-3">
                         <h3 class="card-title fs-6 mb-1">Prenda Hombre 3</h3>
                         <p class="card-text small text-secondary m-0">$ 13.000</p>
+
+                        <button class="btn btn-primary btn-sm mt-2 w-100 btn-add-to-cart" type="button">
+                            Agregar
+                        </button>
                     </div>
                 </article>
             </div>
 
             <div class="col-6 col-md-4 col-lg-3" data-category="calzado" data-aos="fade-up" data-aos-delay="50">
-                <article class="card product-card h-100">
-                    <img src="https://picsum.photos/300/400?random=2" class="card-img-top" alt="Zapatillas de running rojas (Calzado Hombre 3)"
-                        loading="lazy" width="300" height="400">
+                <article class="card product-card h-100" data-id="hombre-calzado-3" data-name="Calzado Hombre 3"
+                    data-price="15600" data-img="https://picsum.photos/300/400?random=6">
+                    <img src="https://picsum.photos/300/400?random=6" class="card-img-top"
+                        alt="Zapatillas de running rojas (Calzado Hombre 3)" loading="lazy" width="300" height="400">
                     <div class="card-body py-3">
                         <h3 class="card-title fs-6 mb-1">Calzado Hombre 3</h3>
                         <p class="card-text small text-secondary m-0">$ 15.600</p>
+
+                        <button class="btn btn-primary btn-sm mt-2 w-100 btn-add-to-cart" type="button">
+                            Agregar
+                        </button>
                     </div>
                 </article>
             </div>
 
             <div class="col-6 col-md-4 col-lg-3" data-category="conjuntos" data-aos="fade-up">
-                <article class="card product-card h-100">
-                    <img src="https://picsum.photos/300/400?random=1" class="card-img-top" alt="Jeans y remera básica masculina (Prenda Hombre 4)"
-                        loading="lazy" width="300" height="400">
+                <article class="card product-card h-100" data-id="hombre-prenda-4" data-name="Prenda Hombre 4"
+                    data-price="13000" data-img="https://picsum.photos/300/400?random=7">
+                    <img src="https://picsum.photos/300/400?random=7" class="card-img-top"
+                        alt="Jeans y remera básica masculina (Prenda Hombre 4)" loading="lazy" width="300" height="400">
                     <div class="card-body py-3">
                         <h3 class="card-title fs-6 mb-1">Prenda Hombre 4</h3>
                         <p class="card-text small text-secondary m-0">$ 13.000</p>
+
+                        <button class="btn btn-primary btn-sm mt-2 w-100 btn-add-to-cart" type="button">
+                            Agregar
+                        </button>
                     </div>
                 </article>
             </div>
 
             <div class="col-6 col-md-4 col-lg-3" data-category="calzado" data-aos="fade-up" data-aos-delay="50">
-                <article class="card product-card h-100">
-                    <img src="https://picsum.photos/300/400?random=2" class="card-img-top" alt="Calzado outdoor marrón para trekking (Calzado Hombre 4)"
-                        loading="lazy" width="300" height="400">
+                <article class="card product-card h-100" data-id="hombre-calzado-4" data-name="Calzado Hombre 4"
+                    data-price="15600" data-img="https://picsum.photos/300/400?random=8">
+                    <img src="https://picsum.photos/300/400?random=8" class="card-img-top"
+                        alt="Calzado outdoor marrón para trekking (Calzado Hombre 4)" loading="lazy" width="300"
+                        height="400">
                     <div class="card-body py-3">
                         <h3 class="card-title fs-6 mb-1">Calzado Hombre 4</h3>
                         <p class="card-text small text-secondary m-0">$ 15.600</p>
+
+                        <button class="btn btn-primary btn-sm mt-2 w-100 btn-add-to-cart" type="button">
+                            Agregar
+                        </button>
                     </div>
                 </article>
             </div>
@@ -253,29 +309,45 @@
         </div>
     </footer>
 
+    <!-- Offcanvas Carrito -->
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="cartOffcanvas"
+        aria-labelledby="cartOffcanvasLabel">
+        <div class="offcanvas-header border-bottom border-secondary">
+            <h2 class="offcanvas-title h5 m-0" id="cartOffcanvasLabel">Tu carrito</h2>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Cerrar"></button>
+        </div>
+
+        <div class="offcanvas-body d-flex flex-column gap-3">
+            <div id="cartEmpty" class="text-secondary small">
+                Tu carrito está vacío.
+            </div>
+
+            <ul id="cartList" class="list-unstyled m-0 d-none"></ul>
+
+            <div class="mt-auto border-top border-secondary pt-3">
+                <div class="d-flex justify-content-between">
+                    <span class="text-secondary">Total</span>
+                    <strong id="cartTotal">$ 0</strong>
+                </div>
+
+                <div class="d-flex gap-2 mt-3">
+                    <button id="cartClear" class="btn btn-outline-light w-50" type="button">Vaciar</button>
+                    <button id="cartCheckout" class="btn btn-primary w-50" type="button">Finalizar</button>
+                </div>
+
+                <p id="cartMsg" class="small text-secondary mt-2 mb-0"></p>
+            </div>
+        </div>
+    </div>
+
     <!-- JS: Bootstrap + AOS + app (con defer) -->
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            if (window.AOS) AOS.init({ once: true, duration: 600, offset: 80 });
-
-            const buttons = document.querySelectorAll('.filter');
-            const cards = document.querySelectorAll('#gridHombre [data-category]');
-            buttons.forEach(btn => {
-                btn.addEventListener('click', () => {
-                    buttons.forEach(b => b.setAttribute('aria-pressed', 'false'));
-                    btn.setAttribute('aria-pressed', 'true');
-                    const f = btn.dataset.filter;
-                    cards.forEach(card => {
-                        const show = (f === 'todo') || (card.dataset.category === f);
-                        card.classList.toggle('d-none', !show);
-                    });
-                });
-            });
-        });
-    </script>
+    <script defer src="../js/aos-init.js"></script>
+    <script src="../js/filters.js"></script>
     <script defer src="../js/main.js"></script>
+    <script defer src="../js/cart.js"></script>
 </body>
 
 </html>
