@@ -30,7 +30,7 @@ img {
   display: block;
 }
 
-.container {
+.container.custom-container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
@@ -220,4 +220,30 @@ footer {
   }
 }
 
+/* Newsletter responsive */
+.newsletter-form{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .75rem;
+}
+
+@media (min-width: 576px){
+  .newsletter-form{
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+  .newsletter-form button{
+    white-space: nowrap;
+  }
+}
+
+.newsletter-form .form-control{
+  width: 100%;
+  min-height: 44px;        
+  padding: .75rem 1rem;
+}
+
+.newsletter-form .btn{
+  min-height: 44px;
+}
 /*# sourceMappingURL=style.css.map */

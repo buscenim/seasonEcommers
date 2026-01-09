@@ -3,7 +3,7 @@
   const STORAGE_KEY = "season_cart_v1";
 
   const els = {
-    badge: null,
+    badges: [],
     list: null,
     total: null,
     empty: null,
@@ -73,14 +73,21 @@
     els.msg.textContent = text || "";
   }
 
+  function renderBadges(count) {
+    if (!els.badges.length) return;
+
+    els.badges.forEach(badge => {
+      badge.textContent = String(count);
+      if (count > 0) badge.classList.remove("d-none");
+      else badge.classList.add("d-none");
+    });
+  }
+
   function render() {
     const cart = getCart();
 
     const count = cartCount(cart);
-    if (els.badge) {
-      els.badge.textContent = String(count);
-      els.badge.style.display = count > 0 ? "inline-block" : "none";
-    }
+    renderBadges(count);
 
     if (els.total) els.total.textContent = moneyARS(cartTotal(cart));
 
@@ -149,7 +156,7 @@
       if (addBtn) {
         const product = readProductFromCard(addBtn);
         if (!product) {
-          setMsg("No pude leer los datos del producto (revisá data-id/name/price/img).");
+          setMsg("No se puede leer los datos del producto.");
           return;
         }
         upsertItem(product);
@@ -186,13 +193,14 @@
           setMsg("Tu carrito está vacío.");
           return;
         }
-        setMsg("Checkout (demo): acá podrías redirigir a una página o mostrar un formulario.");
+        setMsg("Checkout: redirigiendo al pago.");
       });
     }
   }
 
   function init() {
-    els.badge = document.getElementById("cartBadge");
+    els.badges = Array.from(document.querySelectorAll(".cart-badge"));
+
     els.list = document.getElementById("cartList");
     els.total = document.getElementById("cartTotal");
     els.empty = document.getElementById("cartEmpty");
