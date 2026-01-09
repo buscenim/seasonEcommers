@@ -36,7 +36,7 @@ window.addEventListener('DOMContentLoaded', () => {
         feedback.classList.remove('d-none');
         return;
       }
-      feedback.textContent = `Buscaste: "${q}" (demo)`;
+      feedback.textContent = `Buscaste: "${q}"`;
       feedback.classList.remove('d-none');
     });
   }

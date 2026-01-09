@@ -186,7 +186,7 @@
           setMsg("Tu carrito está vacío.");
           return;
         }
-        setMsg("Checkout (demo): acá podrías redirigir a una página o mostrar un formulario.");
+        setMsg("Checkout: redirigiendo al pago.");
       });
     }
   }
