@@ -1,0 +1,98 @@
+[
+  {
+    "id": "mujer-vestido-1",
+    "name": "Vestido Mujer 1",
+    "price": 18500,
+    "category": "vestidos",
+    "gender": "women",
+    "image": "https://picsum.photos/300/400?random=10"
+  },
+  {
+    "id": "mujer-vestido-2",
+    "name": "Vestido Mujer 2",
+    "price": 18500,
+    "category": "vestidos",
+    "gender": "women",
+    "image": "https://picsum.photos/300/400?random=12"
+  },
+  {
+    "id": "mujer-vestido-3",
+    "name": "Vestido Mujer 3",
+    "price": 18500,
+    "category": "vestidos",
+    "gender": "women",
+    "image": "https://picsum.photos/300/400?random=13"
+  },
+  {
+    "id": "mujer-vestido-4",
+    "name": "Vestido Mujer 4",
+    "price": 18500,
+    "category": "vestidos",
+    "gender": "women",
+    "image": "https://picsum.photos/300/400?random=14"
+  },
+  {
+    "id": "mujer-calzado-1",
+    "name": "Calzado Mujer 1",
+    "price": 22000,
+    "category": "calzado",
+    "gender": "women",
+    "image": "https://picsum.photos/300/400?random=11"
+  },
+  {
+    "id": "mujer-calzado-2",
+    "name": "Calzado Mujer 2",
+    "price": 22000,
+    "category": "calzado",
+    "gender": "women",
+    "image": "https://picsum.photos/300/400?random=15"
+  },
+  {
+    "id": "mujer-calzado-3",
+    "name": "Calzado Mujer 3",
+    "price": 22000,
+    "category": "calzado",
+    "gender": "women",
+    "image": "https://picsum.photos/300/400?random=16"
+  },
+  {
+    "id": "mujer-calzado-4",
+    "name": "Calzado Mujer 4",
+    "price": 22000,
+    "category": "calzado",
+    "gender": "women",
+    "image": "https://picsum.photos/300/400?random=17"
+  },
+  {
+    "id": "mujer-accesorio-1",
+    "name": "Accesorio Mujer 1",
+    "price": 18500,
+    "category": "accesorios",
+    "gender": "women",
+    "image": "https://picsum.photos/300/400?random=18"
+  },
+  {
+    "id": "mujer-accesorio-2",
+    "name": "Accesorio Mujer 2",
+    "price": 18500,
+    "category": "accesorios",
+    "gender": "women",
+    "image": "https://picsum.photos/300/400?random=19"
+  },
+  {
+    "id": "mujer-accesorio-3",
+    "name": "Accesorio Mujer 3",
+    "price": 18500,
+    "category": "accesorios",
+    "gender": "women",
+    "image": "https://picsum.photos/300/400?random=20"
+  },
+  {
+    "id": "mujer-accesorio-4",
+    "name": "Accesorio Mujer 4",
+    "price": 18500,
+    "category": "accesorios",
+    "gender": "women",
+    "image": "https://picsum.photos/300/400?random=21"
+  }
+]
