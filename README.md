@@ -10,23 +10,28 @@ Combina una estructura completa en HTML, SASS, Bootstrap y prácticas de SEO par
 seasonEcommers/
 ├── index.html
 ├── pages/
-│ ├── mujer.html
-│ ├── hombre.html
-│ ├── quienes-somos.html
-│ └── contacto.html
+│   ├── mujer.html
+│   ├── hombre.html
+│   ├── quienes-somos.html
+│   └── contacto.html
+├── data/
+│   └── products.json
 ├── css/
-│ ├── style.css
-│ └── theme.css
+│   ├── style.css
+│   └── theme.css
 ├── scss/
-│ ├── main.scss
-│ ├── _variables.scss
-│ ├── _mixins.scss
-│ ├── _layout.scss
-│ └── _components.scss
+│   ├── main.scss
+│   ├── _variables.scss
+│   ├── _mixins.scss
+│   ├── _layout.scss
+│   └── _components.scss
 ├── js/
-│ └── main.js
+│   ├── products.js
+│   ├── filters.js
+│   ├── cart.js
+│   ├── alerts.js
+│   └── main.js
 └── assets/
-└── images/
 
 ## 🛠️ Tecnologías utilizadas
 
@@ -37,6 +42,9 @@ seasonEcommers/
 - **AOS (Animate On Scroll)** — animaciones dinámicas  
 - **Font Awesome** — iconografía  
 - **JavaScript (nativo)** — interactividad básica y validaciones  
+- **SweetAlert2** — alertas personalizadas
+- **Fetch API** — carga asíncrona de datos
+- **localStorage** — persistencia del carrito
 
 ---
 
@@ -78,6 +86,6 @@ Settings → Pages → Branch: main → / (root) → Save.
 👨‍💻 Autor
 
 Matías Busceni
-📧 info@season.com
+📧 buscenimatias@gmail.com
 
-🌎 GitHub - buscenim
+🌎 GitHub - https://github.com/buscenim

@@ -203,10 +203,10 @@ function swalWarn(title, text = "") {
 
     if (els.clear) {
       els.clear.addEventListener("click", () => {
-        Swal.fire({
+        seasonSwal.fire({
+          icon: "warning",
           title: "¿Vaciar carrito?",
           text: "Se eliminarán todos los productos",
-          icon: "warning",
           showCancelButton: true,
           confirmButtonText: "Sí, vaciar",
           cancelButtonText: "Cancelar"
