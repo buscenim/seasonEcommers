@@ -50,10 +50,13 @@ function renderProducts(products, gridId) {
     grid.appendChild(col);
   });
 
-  if (window.AOS) AOS.refresh();
+  if (window.AOS) {
+    AOS.refresh();
+  }
+
+  initFilters();
 }
 
-/* 🔽 Inicialización automática según la página */
 document.addEventListener("DOMContentLoaded", () => {
   if (document.getElementById("gridMujer")) {
     loadProducts("women", "gridMujer");

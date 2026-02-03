@@ -1,29 +1,25 @@
-// filtros
-(() => {
-  function initFilters() {
-    const buttons = document.querySelectorAll('.filter');
-    if (!buttons.length) return;
+function initFilters() {
+  const filterButtons = document.querySelectorAll(".filter");
+  const productCards = document.querySelectorAll("[data-category]");
 
-    const container = document.querySelector('[data-filter-container]');
-    if (!container) return;
+  if (!filterButtons.length || !productCards.length) return;
 
-    const cards = container.querySelectorAll('[data-category]');
-    if (!cards.length) return;
+  filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const filter = button.dataset.filter;
 
-    buttons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        buttons.forEach(b => b.setAttribute('aria-pressed', 'false'));
-        btn.setAttribute('aria-pressed', 'true');
+      filterButtons.forEach(btn =>
+        btn.setAttribute("aria-pressed", "false")
+      );
+      button.setAttribute("aria-pressed", "true");
 
-        const f = btn.dataset.filter;
-
-        cards.forEach(card => {
-          const show = (f === 'todo') || (card.dataset.category === f);
-          card.classList.toggle('d-none', !show);
-        });
+      productCards.forEach(card => {
+        if (filter === "todo" || card.dataset.category === filter) {
+          card.classList.remove("d-none");
+        } else {
+          card.classList.add("d-none");
+        }
       });
     });
-  }
-
-  window.addEventListener('DOMContentLoaded', initFilters);
-})();
+  });
+}
