@@ -1,8 +1,5 @@
-// js/main.js
-// Funciones generales del sitio (sin AOS ni filtros, que están en archivos propios)
 
 window.addEventListener('DOMContentLoaded', () => {
-  // Validación Bootstrap-style para formularios con novalidate
   const forms = document.querySelectorAll('form[novalidate]');
   forms.forEach(form => {
     form.addEventListener('submit', (e) => {
