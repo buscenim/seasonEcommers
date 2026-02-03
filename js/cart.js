@@ -1,4 +1,21 @@
-// js/cart.js
+function swalSuccess(title, text = "") {
+  seasonSwal.fire({
+    icon: "success",
+    title,
+    text,
+    timer: 1200,
+    showConfirmButton: false
+  });
+}
+
+function swalWarn(title, text = "") {
+  seasonSwal.fire({
+    icon: "warning",
+    title,
+    text
+  });
+}
+
 (() => {
   const STORAGE_KEY = "season_cart_v1";
 
@@ -109,11 +126,14 @@
         (item) => `
         <li class="border border-secondary rounded p-2 mb-2">
           <div class="d-flex gap-2">
-            <img src="${item.img}" alt="${item.name}" width="56" height="56" class="rounded" style="object-fit:cover;">
+            <img src="${item.img}" alt="${item.name}" width="56" height="56"
+                 class="rounded" style="object-fit:cover;">
             <div class="flex-grow-1">
               <div class="d-flex justify-content-between gap-2">
                 <strong class="small">${item.name}</strong>
-                <button class="btn btn-sm btn-outline-light btn-remove-item" data-id="${item.id}" type="button" aria-label="Eliminar">
+                <button class="btn btn-sm btn-outline-light btn-remove-item"
+                        data-id="${item.id}" type="button"
+                        aria-label="Eliminar">
                   <i class="fa-solid fa-trash" aria-hidden="true"></i>
                 </button>
               </div>
@@ -123,9 +143,12 @@
 
                 <div class="d-flex align-items-center gap-2">
                   <label class="visually-hidden" for="qty-${item.id}">Cantidad</label>
-                  <input id="qty-${item.id}" class="form-control form-control-sm cart-qty"
-                         data-id="${item.id}" type="number" min="1" max="99"
-                         value="${item.qty}" style="width:78px;">
+                  <input id="qty-${item.id}"
+                         class="form-control form-control-sm cart-qty"
+                         data-id="${item.id}"
+                         type="number" min="1" max="99"
+                         value="${item.qty}"
+                         style="width:78px;">
                   <span class="small">${moneyARS(item.price * item.qty)}</span>
                 </div>
               </div>
@@ -156,11 +179,11 @@
       if (addBtn) {
         const product = readProductFromCard(addBtn);
         if (!product) {
-          setMsg("No se puede leer los datos del producto.");
+          swalWarn("Error", "No se pudo leer el producto");
           return;
         }
         upsertItem(product);
-        setMsg("Producto agregado ✅");
+        swalSuccess("Producto agregado", product.name);
         return;
       }
 
@@ -180,8 +203,19 @@
 
     if (els.clear) {
       els.clear.addEventListener("click", () => {
-        clearCart();
-        setMsg("Carrito vacío.");
+        seasonSwal.fire({
+          icon: "warning",
+          title: "¿Vaciar carrito?",
+          text: "Se eliminarán todos los productos",
+          showCancelButton: true,
+          confirmButtonText: "Sí, vaciar",
+          cancelButtonText: "Cancelar"
+        }).then(result => {
+          if (result.isConfirmed) {
+            clearCart();
+            swalSuccess("Carrito vacío");
+          }
+        });
       });
     }
 
@@ -190,17 +224,23 @@
       checkout.addEventListener("click", () => {
         const cart = getCart();
         if (cart.length === 0) {
-          setMsg("Tu carrito está vacío.");
+          swalWarn("Carrito vacío", "Agregá productos para continuar");
           return;
         }
-        setMsg("Checkout: redirigiendo al pago.");
+
+        Swal.fire({
+          icon: "success",
+          title: "¡Compra realizada!",
+          text: "Gracias por elegir SEASON"
+        });
+
+        clearCart();
       });
     }
   }
 
   function init() {
     els.badges = Array.from(document.querySelectorAll(".cart-badge"));
-
     els.list = document.getElementById("cartList");
     els.total = document.getElementById("cartTotal");
     els.empty = document.getElementById("cartEmpty");

@@ -246,4 +246,25 @@ footer {
 .newsletter-form .btn{
   min-height: 44px;
 }
-/*# sourceMappingURL=style.css.map */
+
+.season-swal {
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+}
+
+.season-swal-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.season-swal-text {
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem;
+  color: #bfc3c7;
+}
+
+.swal2-icon {
+  margin-top: 0.8rem;
+}

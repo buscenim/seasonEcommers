@@ -1,0 +1,162 @@
+[
+    {
+        "id": "mujer-vestido-1",
+        "name": "Vestido Mujer 1",
+        "price": 18500,
+        "category": "vestidos",
+        "gender": "women",
+        "image": "https://picsum.photos/300/400?random=10"
+    },
+    {
+        "id": "mujer-vestido-2",
+        "name": "Vestido Mujer 2",
+        "price": 18500,
+        "category": "vestidos",
+        "gender": "women",
+        "image": "https://picsum.photos/300/400?random=12"
+    },
+    {
+        "id": "mujer-vestido-3",
+        "name": "Vestido Mujer 3",
+        "price": 18500,
+        "category": "vestidos",
+        "gender": "women",
+        "image": "https://picsum.photos/300/400?random=13"
+    },
+    {
+        "id": "mujer-vestido-4",
+        "name": "Vestido Mujer 4",
+        "price": 18500,
+        "category": "vestidos",
+        "gender": "women",
+        "image": "https://picsum.photos/300/400?random=14"
+    },
+    {
+        "id": "mujer-calzado-1",
+        "name": "Calzado Mujer 1",
+        "price": 22000,
+        "category": "calzado",
+        "gender": "women",
+        "image": "https://picsum.photos/300/400?random=11"
+    },
+    {
+        "id": "mujer-calzado-2",
+        "name": "Calzado Mujer 2",
+        "price": 22000,
+        "category": "calzado",
+        "gender": "women",
+        "image": "https://picsum.photos/300/400?random=15"
+    },
+    {
+        "id": "mujer-calzado-3",
+        "name": "Calzado Mujer 3",
+        "price": 22000,
+        "category": "calzado",
+        "gender": "women",
+        "image": "https://picsum.photos/300/400?random=16"
+    },
+    {
+        "id": "mujer-calzado-4",
+        "name": "Calzado Mujer 4",
+        "price": 22000,
+        "category": "calzado",
+        "gender": "women",
+        "image": "https://picsum.photos/300/400?random=17"
+    },
+    {
+        "id": "mujer-accesorio-1",
+        "name": "Accesorio Mujer 1",
+        "price": 18500,
+        "category": "accesorios",
+        "gender": "women",
+        "image": "https://picsum.photos/300/400?random=18"
+    },
+    {
+        "id": "mujer-accesorio-2",
+        "name": "Accesorio Mujer 2",
+        "price": 18500,
+        "category": "accesorios",
+        "gender": "women",
+        "image": "https://picsum.photos/300/400?random=19"
+    },
+    {
+        "id": "mujer-accesorio-3",
+        "name": "Accesorio Mujer 3",
+        "price": 18500,
+        "category": "accesorios",
+        "gender": "women",
+        "image": "https://picsum.photos/300/400?random=20"
+    },
+    {
+        "id": "mujer-accesorio-4",
+        "name": "Accesorio Mujer 4",
+        "price": 18500,
+        "category": "accesorios",
+        "gender": "women",
+        "image": "https://picsum.photos/300/400?random=21"
+    },
+    {
+        "id": "hombre-prenda-1",
+        "name": "Prenda Hombre 1",
+        "price": 13000,
+        "category": "conjuntos",
+        "gender": "men",
+        "image": "https://picsum.photos/300/400?random=1"
+    },
+    {
+        "id": "hombre-calzado-1",
+        "name": "Calzado Hombre 1",
+        "price": 15600,
+        "category": "calzado",
+        "gender": "men",
+        "image": "https://picsum.photos/300/400?random=2"
+    },
+    {
+        "id": "hombre-prenda-2",
+        "name": "Prenda Hombre 2",
+        "price": 13000,
+        "category": "conjuntos",
+        "gender": "men",
+        "image": "https://picsum.photos/300/400?random=3"
+    },
+    {
+        "id": "hombre-calzado-2",
+        "name": "Calzado Hombre 2",
+        "price": 15600,
+        "category": "calzado",
+        "gender": "men",
+        "image": "https://picsum.photos/300/400?random=4"
+    },
+    {
+        "id": "hombre-prenda-3",
+        "name": "Prenda Hombre 3",
+        "price": 13000,
+        "category": "conjuntos",
+        "gender": "men",
+        "image": "https://picsum.photos/300/400?random=5"
+    },
+    {
+        "id": "hombre-calzado-3",
+        "name": "Calzado Hombre 3",
+        "price": 15600,
+        "category": "calzado",
+        "gender": "men",
+        "image": "https://picsum.photos/300/400?random=6"
+    },
+    {
+        "id": "hombre-prenda-4",
+        "name": "Prenda Hombre 4",
+        "price": 13000,
+        "category": "conjuntos",
+        "gender": "men",
+        "image": "https://picsum.photos/300/400?random=7"
+    },
+    {
+        "id": "hombre-calzado-4",
+        "name": "Calzado Hombre 4",
+        "price": 15600,
+        "category": "calzado",
+        "gender": "men",
+        "image": "https://picsum.photos/300/400?random=8"
+    }
+]
