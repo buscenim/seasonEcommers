@@ -228,10 +228,11 @@ function swalWarn(title, text = "") {
           return;
         }
 
-        Swal.fire({
+        seasonSwal.fire({
           icon: "success",
           title: "¡Compra realizada!",
-          text: "Gracias por elegir SEASON"
+          text: "Gracias por elegir SEASON",
+          confirmButtonText: "OK"
         });
 
         clearCart();
